@@ -1,0 +1,27 @@
+/*--------------------------------
+    サイトロゴ
+--------------------------------*/
+/*------ 画像ベース -------*/
+.el_siteLogo {
+    width: 150px;
+    img {
+        vertical-align: middle;
+    }
+    &:focus,
+    &:hover {
+        opacity: .8;
+    }
+}
+
+/*------ テキストベース -------*/
+.el_siteTtl {
+    display: inline-block;
+    color: $footer_fontColor;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+        opacity: .8;
+    }
+}
