@@ -81,6 +81,60 @@ acf_add_options_sub_page(array(
 'parent_slug'=> 'theme-edit',
 'position'=> false,
 ));
+	
+acf_add_options_sub_page(array(
+'page_title'=> '私たちの強み',
+'menu_title'=> '私たちの強み',
+'menu_slug'=> 'theme-edit-str',
+'capability'=> 'edit_posts',
+'parent_slug'=> 'theme-edit',
+'position'=> false,
+));
+
+acf_add_options_sub_page(array(
+'page_title'=> 'ホームページ制作',
+'menu_title'=> 'ホームページ制作',
+'menu_slug'=> 'theme-edit-ser',
+'capability'=> 'edit_posts',
+'parent_slug'=> 'theme-edit',
+'position'=> false,
+));
+
+acf_add_options_sub_page(array(
+'page_title'=> '制作事例',
+'menu_title'=> '制作事例',
+'menu_slug'=> 'theme-edit-wor',
+'capability'=> 'edit_posts',
+'parent_slug'=> 'theme-edit',
+'position'=> false,
+));
+
+acf_add_options_sub_page(array(
+'page_title'=> '企業理念',
+'menu_title'=> '企業理念',
+'menu_slug'=> 'theme-edit-phi',
+'capability'=> 'edit_posts',
+'parent_slug'=> 'theme-edit',
+'position'=> false,
+));
+
+acf_add_options_sub_page(array(
+'page_title'=> '会社情報',
+'menu_title'=> '会社情報',
+'menu_slug'=> 'theme-edit-com',
+'capability'=> 'edit_posts',
+'parent_slug'=> 'theme-edit',
+'position'=> false,
+));
+
+acf_add_options_sub_page(array(
+'page_title'=> '採用情報',
+'menu_title'=> '採用情報',
+'menu_slug'=> 'theme-edit-rec',
+'capability'=> 'edit_posts',
+'parent_slug'=> 'theme-edit',
+'position'=> false,
+));
 
 }
 

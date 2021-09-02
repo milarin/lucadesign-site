@@ -7,10 +7,10 @@
 function my_custom_init() {
 	
 	/*--------------------------------
-	* 投稿タイプ：お知らせ
+	* 投稿タイプ：制作
 	--------------------------------*/
-	register_post_type( 'news', array(
-		'label' => 'お知らせ',
+	register_post_type( 'works', array(
+		'label' => '制作事例',
 		'public' => true,
 		'supports' => array( 'title', 'editor', 'author', 'thumbnail'),
 		'menu_position' => 4,
@@ -20,12 +20,12 @@ function my_custom_init() {
 	));
 	/*------ タクソノミー：お知らせカテゴリー -------*/
 	register_taxonomy(
-		'newscat', //タクソノミースラッグ
-		'news', //投稿タイプ
+		'workscat', //タクソノミースラッグ
+		'works', //投稿タイプ
 		array(
 			'hierarchical' => true,
 			'update_count_callback' => '_update_post_term_count',
-			'label' =>'お知らせカテゴリー',
+			'label' =>'制作カテゴリー',
 			'public' => true,
 			'show_in_rest' => true,
 			'show_ui' => true
