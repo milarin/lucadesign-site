@@ -8,6 +8,12 @@ $nav = array( //グローバルナビゲーション
 	'theme_location' => 'menu-1',
 );
 
+$nav_pc = array( //グローバルナビゲーション
+	'container' => false,
+	'menu_class' => 'bl_headerNav bl_headerNav__pc',
+	'theme_location' => 'menu-1',
+);
+
 /*--------------------------------
  *	DOM生成
 --------------------------------*/
@@ -31,19 +37,29 @@ $nav = array( //グローバルナビゲーション
 		<header id="masthead" class="site-header ly_header">
 			<div class="ly_header_inner">
 				<div class="bl_headerUtils">
-
-					<?php if( is_front_page() or is_home() ): //サイトロゴ：トップページならh1タグに内包 ?>
-						<h1 class="bl_headerUtils_logo_wrapper"><?php the_custom_logo(); ?></h1>
-					<?php else ://サイトロゴ：トップページ以外ならdivタグに内包 ?>
-						<div class="bl_headerUtils_logo_wrapper"><?php the_custom_logo(); ?></div>
-					<?php endif; //END：サイトロゴ条件分岐 ?>
-					
-					<a class="el_btn" href="<?php the_field( 'ad_inquiryLink', 'option' ); ?>">お問い合わせ</a>
-
+					<div class="un_siteLogo">
+						<p><?php bloginfo( 'description' ); ?></p>
+						<?php if( is_front_page() or is_home() ): //サイトロゴ：トップページならh1タグに内包 ?>
+							<h1 class="bl_headerUtils_logo_wrapper"><?php the_custom_logo(); ?></h1>
+						<?php else ://サイトロゴ：トップページ以外ならdivタグに内包 ?>
+							<div class="bl_headerUtils_logo_wrapper"><?php the_custom_logo(); ?></div>
+						<?php endif; //END：サイトロゴ条件分岐 ?>
+					</div>
+					<div class="ly_headerUtils_inner">
+						<nav class="bl_headerUtils_nav">
+							<?php wp_nav_menu( $nav_pc ); //グローバルナビゲーション ?>
+							<a class="el_btn el_btn__inq" href="<?php the_field( 'ad_inquiryLink', 'option' ); ?>">お問い合わせ</a>
+							<a class="el_btn el_btn__dl" href="<?php the_field( 'ad_inquiryLink', 'option' ); ?>">料金表ダウンロード</a>
+						</nav>
+						<!-- /.un_rightNav -->
+					</div>
+					<!-- /.ly_headerUtils_inner -->
 				</div>
 				<!--/.bl_headerUtils-->	
-
-				<nav class="bl_headerNav_wrapper"><?php wp_nav_menu( $nav ); //グローバルナビゲーション ?></nav>
+					
+				<nav class="bl_headerNav_wrapper">
+					<?php wp_nav_menu( $nav ); //グローバルナビゲーション ?>
+				</nav>
 
 			</div>
 			<!--/.ly_header_inner-->

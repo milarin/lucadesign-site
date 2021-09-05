@@ -49,12 +49,15 @@ $mobileMenu_bc: #ccc; //エリア内線色
 //--------------------------------
 $breakpoint_small: 767px;//モバイル
 $breakpoint_medium: 1020px;//タブレット
+$breakpoint_over: 1260px;//nav breakpoint
 
 //--------------------------------
 //  コンテンツ幅、ガター
 //--------------------------------
 $content_width_calc: 1200; //コンテンツ幅（数値）
+$content_width_calc_nav: 1480; //コンテンツ幅（数値）
 $content_width: $content_width_calc * 1px; //コンテンツ幅（px）
+$content_width_nav: $content_width_calc_nav * 1px; //コンテンツ幅（px）
 $content_gutter: 15px; //コンテンツエリア左右ガター
 
 //--------------------------------

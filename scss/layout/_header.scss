@@ -10,6 +10,7 @@
     }
     &_inner{
         @include contentArea;
+		max-width: $content_width_nav;
         @include media(sm) {
             padding-top: 5px;
         }
@@ -26,6 +27,12 @@
         padding: 10px 20px;
         box-shadow: none;
     }
+}
+.bl_headerNav_wrapper {
+	display: none;
+	@include media(ov) {
+		display: block;
+	}
 }
 
 .bl_headerNav { //グローバルナビゲーション
@@ -45,9 +52,10 @@
             color: $base_fontColor;
             text-decoration: none;
             transition: .25s;
+			font-weight: bold;
             &:focus,
             &:hover {
-                border-bottom-color: $accent_color;
+                border-bottom-color: $base_fontColor;
             }
             &::after {
                 content: '';
@@ -61,4 +69,44 @@
             }
         }
     }
+	@include media(sm) {
+		display: none;
+	}
+}
+
+.un_siteLogo {
+	& > p {
+		font-size: 0.875rem;
+		margin-bottom: 10px;
+	}
+	.el_siteLogo {
+		width: 200px !important;
+	}
+}
+.ly_headerUtils_inner {
+	& > .bl_headerUtils_nav {
+		display: flex;
+		align-items: center;
+		& > .bl_headerNav__pc {
+			margin-right: 10px;
+			font-weight: bold;
+			font-size: 0.875rem;
+			li > a {
+				padding: 10px !important;
+			}
+			@include media(ov) {
+				display: none;
+			}
+			& > li > a::after {
+				content: none;
+			}
+		}
+		& > .el_btn__inq {
+			margin-right: 10px;
+		}
+		@include media(sm) {
+			display: none;
+		}
+	}
+
 }

@@ -28,5 +28,10 @@ $nav = array(
 --------------------------------->
 <div class="bl_mobileMenu js_mobileMenu">
     <nav><?php wp_nav_menu( $nav ); //ナビゲーション?></nav>
+	<div class="bl_mobileMenu_inner">
+		<a class="el_btn el_btn__inq" href="<?php the_field( 'ad_inquiryLink', 'option' ); ?>">お問い合わせ</a>
+		<a class="el_btn el_btn__dl" href="<?php the_field( 'ad_inquiryLink', 'option' ); ?>">料金表ダウンロード</a>
+	</div>
+	<!-- /.bl_mobileMenu_inner -->
 </div>
 <!-- ./bl_mobileMenu -->

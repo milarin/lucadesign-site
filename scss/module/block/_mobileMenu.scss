@@ -28,6 +28,23 @@
   &.is_open {
       transform: translateZ(0);
     }
+	.bl_mobileMenu_inner {
+		display: flex;
+		margin: 20px auto;
+		& > .el_btn__inq {
+			margin-right: 10px;
+		}
+		@include media(sm) {
+			display: block;
+			& > .el_btn__inq {
+				margin-right: 0px;
+				margin-bottom: 10px;
+			}
+			& > .el_btn {
+				width: 100%;
+			}
+		}
+	}
 }
 
 /*------ ナビゲーションメニュー -------*/

@@ -43,8 +43,10 @@
 //              sm => モバイル
 //              md => タブレット
 //              lg => デスクトップ
+//              ov => ナビゲーションブレイクポイント
 //              smmd => モバイル＋タブレット
 //              mdlg => タブレット＋デスクトップ
+//              lgov =>　デスクトップ　+ ナビゲーションブレイクポイント
 //--------------------------------
 @mixin media($size) { //[引数]sm：モバイル
     @if $size == sm {
@@ -59,6 +61,16 @@
     }
     @else if $size == lg { //[引数]lg：デスクトップ
         @media screen and (min-width : $breakpoint_medium + 1){
+            @content;
+        }
+    }
+    @else if $size == lgov { //[引数]lgov：デスクトップ　+ ナビゲーションブレイクポイント
+        @media screen and (min-width : $breakpoint_medium + 1) and (max-width : $breakpoint_over){
+            @content;
+        }
+    }
+    @else if $size == ov { //[引数]ov：ナビゲーションブレイクポイント
+        @media screen and (max-width : $breakpoint_over + 1){
             @content;
         }
     }
