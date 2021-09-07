@@ -9,9 +9,56 @@
     background: {
         color: $footer_background;
     }
-    &_inner {
-        @include contentArea;
-    }
+	@include contentArea;
+	.ly_footer_inner_top {
+		display: flex;
+		padding-bottom: 40px;
+		border-bottom: 1px solid $base_borderColor;
+		@include media(sm) {
+			display: none;
+		}
+		.ly_footer_inner_left {
+			flex: 1;
+			p {
+				color: #fff;
+				margin-bottom: 10px;
+			}
+			.bl_headerNav {
+				& > li > a {
+					color: #fff;
+				}
+			}
+			> a {
+				display: inline-block;
+				font-size: 0.875rem;
+				font-weight: normal;
+				text-decoration: underline;
+				color: $layer_color;
+			}
+		}
+		.ly_footer_inner_right {
+			// flex: 0 0 25.33333%;
+			width: 303px;
+			& .el_btn {
+				background: #fff!important;
+				color: $theme_color;
+				font-size: 1rem;
+				width: 303px;
+				max-width: 100%;
+				padding: 24px !important;
+				margin-bottom: 10px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				&:focus,
+				&:hover {
+					background-color: $theme_color !important;
+					border-color: currentColor;
+					color: #fff;
+				}
+			}
+		}
+	}
 }
 
 /*------ フッター調整 -------*/
@@ -26,6 +73,30 @@
     }
 }
 
+.ly_footer_inner_content {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	& > a {
+		margin-right: 40px;
+	}
+}
+.ly_footer_inner__bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-bottom: -10px;
+	@include media(sm) {
+		padding-top: 0;
+	}
+	& > * {
+		margin-bottom: 10px;
+	}
+}
+
 /*------ コピーライト -------*/
 .el_copyright {
     display: block;
@@ -34,11 +105,22 @@
 }
 
 .ly_footer .el_copyright {
-    padding-top: 10px;
     text-align: center;
 }
 
 /*------ サイトタイトル -------*/
 .ly_footer .el_siteTtl {
-    margin-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+/*------ フッターロゴ -------*/
+.el_footer_logo {
+	@include media(sm) {
+		margin-bottom: 10px;
+	}
+	figure {
+		& > img {
+			width: 200px;
+		}
+	}
 }

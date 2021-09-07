@@ -11,6 +11,8 @@
 function register_my_menu() {
     register_nav_menu( 'main-menu','Main Menu');
     register_nav_menu( 'sub-menu','Sub Menu');
+    register_nav_menu( 'footer_menu_com','Com Menu');
+    register_nav_menu( 'footer_menu_info','Info Menu');
 }
 add_action( 'after_setup_theme', 'register_my_menu' );
 

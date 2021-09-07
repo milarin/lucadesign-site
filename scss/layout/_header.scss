@@ -23,9 +23,19 @@
     justify-content: space-between;
     margin-bottom: 20px;
     & .el_btn { //お問い合わせボタン
-        width: auto;
-        padding: 10px 20px;
-        box-shadow: none;
+		width: auto;
+		padding: 10px 37px;
+		background: #151515;
+		color: #fff;
+		&:after {
+			content: unset;
+		}
+		&:focus,
+		&:hover {
+			background-color: #fff;
+			border-color: currentColor;
+			color: #151515;
+		}
     }
 }
 .bl_headerNav_wrapper {
@@ -72,6 +82,40 @@
 	@include media(sm) {
 		display: none;
 	}
+	&.bl_headerNav__footer {
+		justify-content: unset;
+		margin-bottom: 30px;
+		flex-wrap: wrap;
+		& > li {
+			flex-grow: unset;
+			position: relative;
+			border-right: 1px solid #ddd;
+			&:last-child {
+				border: none;
+				margin-right: 0px !important;
+			}
+			&:first-child a {
+				margin-left: 0px;
+			}
+			&:last-child a {
+				margin-right: 0px !important;
+			}
+			& > a {
+				padding: 0px;
+				margin: 3px 20px;
+				border-bottom: 1px solid transparent;
+				font-size: 0.875rem;
+				font-weight: normal;
+				&::after {
+					content: unset !important;
+				}
+				&:focus,
+				&:hover {
+					border-bottom-color: $layer_color;
+				}
+			}
+		}
+	}
 }
 
 .un_siteLogo {
@@ -101,12 +145,11 @@
 				content: none;
 			}
 		}
-		& > .el_btn__inq {
+		& > .el_btn {
 			margin-right: 10px;
 		}
 		@include media(sm) {
 			display: none;
 		}
 	}
-
 }

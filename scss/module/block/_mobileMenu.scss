@@ -30,13 +30,25 @@
     }
 	.bl_mobileMenu_inner {
 		display: flex;
-		margin: 20px auto;
-		& > .el_btn__inq {
+		margin: 20px 0;
+		& > .el_btn {
+			width: 100%;
 			margin-right: 10px;
+			background: #151515;
+			color: #fff;
+			&:focus,
+			&:hover {
+				background-color: #fff;
+				border-color: currentColor;
+				color: #151515;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		@include media(sm) {
 			display: block;
-			& > .el_btn__inq {
+			& > .el_btn {
 				margin-right: 0px;
 				margin-bottom: 10px;
 			}
