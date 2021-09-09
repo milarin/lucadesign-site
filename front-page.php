@@ -5,30 +5,89 @@
 
 		<?php while ( have_posts() ) : the_post();?>
 
-		<section class="ly_service">
-			<div class="ly_service_wrapper">
-				<p class="el_h2_ruby">service</p>
-				<h2 class="el_h2">サービス</h2>
-				<div class="ly_service_inner">
-					<div class="ly_service_inner_left">
-						<h3 class="el_service_h3">課題を解消し、成果につながる<br>ホームページを制作します</h3>
-						<p class="el_service_txtarea">
-							ユーザー視点の設計、マルチデバイス対応、メンテナンス性への配慮など。<br>
-							ホームページを作る上で押さえるべきポイントは多岐にわたります。<br>
-							ルカデザインでは設計からデザイン、開発にいたる工程をそれぞれの専門家が対応し、企業の発展に貢献できるホームページを制作いたします。
-						</p>
-						<a href="" class="el_btn">詳しく見る</a>
+			<div class="ly_strength">
+
+				<div class="ly_strength_wrapper">
+
+					<div class="ly_strength_inner">
+
+						<div class="bl_strength">
+							<div class="bl_strength_left">
+								<p class="bl_strength_number">01</p>
+								<h3 class="bl_strength_h3">地域密着ならではの柔軟な対応</h3>
+								<p class="bl_strength_txt">
+								お客様の魅力を引き出すためには、円滑なコミュニケーションが欠かせません。地域密着だからこそ、お客様のもとへ足を運び、悩みや課題を解消するための方法を考えます。<br>
+								お客様が抱える問題を、ぜひ直接お伝えください。
+								</p>
+							</div>
+							<!-- /.bl_strength_left -->
+							<div class="bl_strength_right">
+								<img src="http://lucadesign.local/wp-content/uploads/2021/09/strength1.png" alt="">
+							</div>
+							<!-- /.bl_strength_right -->
+						</div>
+						<!-- /.bl_strength -->
+
+						<div class="bl_strength">
+							<div class="bl_strength_left">
+								<p class="bl_strength_number">02</p>
+								<h3 class="bl_strength_h3">定期メンテナンスとフォロー体制</h3>
+								<p class="bl_strength_txt">
+								ホームページは作って終わりではなく、定期的にメンテナンスすることが大切です。ルカデザインでは、先のメンテナンスを考慮した上で制作しているため、余計なコストをかけることなく運用いただけます。<br>
+								また、お客様がホームページを使いこなせるよう、専門のスタッフによるサポートも実施しています。<br>
+								疑問や相談したいことがあれば、お客様のもとへかけつけます。
+								</p>
+							</div>
+							<!-- /.bl_strength_left -->
+							<div class="bl_strength_right">
+								<img src="http://lucadesign.local/wp-content/uploads/2021/08/site1.jpg" alt="">
+							</div>
+							<!-- /.bl_strength_right -->
+						</div>
+						<!-- /.bl_strength -->
+
+						<div class="bl_strength">
+							<div class="bl_strength_left">
+								<p class="bl_strength_number">03</p>
+								<h3 class="bl_strength_h3">結果を意識したホームページ制作</h3>
+								<p class="bl_strength_txt">
+									自社の伝えたい内容だけを盛り込んだ自分本位のホームページでは、ユーザーが満足することはありません。
+									<br>徹底したユーザー視点で設計・制作をすることで、成果につながるホームページを提供いたします。
+								</p>
+							</div>
+							<!-- /.bl_strength_left -->
+							<div class="bl_strength_right">
+								<img src="http://lucadesign.local/wp-content/uploads/2021/09/service_bg.png" alt="">
+							</div>
+							<!-- /.bl_strength_right -->
+						</div>
+						<!-- /.bl_strength -->
+
+						<div class="bl_strength">
+							<div class="bl_strength_left">
+								<p class="bl_strength_number">04</p>
+								<h3 class="bl_strength_h3">分かりやすく丁寧な説明</h3>
+								<p class="bl_strength_txt">
+								ルカデザインではお客様に安心してご依頼いただけるように、丁寧な対話を心がけています。<br>「Web制作会社は価格が高い上に、何をしてくれるのかよく分からない」と思っている方も多いです。<br>
+								だからこそ、各工程においてコミュニケーションをしっかり取り、会社としてお客様の抱える不安を拭えるよう努めております。
+								</p>
+							</div>
+							<!-- /.bl_strength_left -->
+							<div class="bl_strength_right">
+								<img src="http://lucadesign.local/wp-content/uploads/2021/09/strength1.png" alt="">
+							</div>
+							<!-- /.bl_strength_right -->
+						</div>
+						<!-- /.bl_strength -->
+
 					</div>
-					<!-- /.ly_service_inner_left -->
-					<div class="ly_service_inner_right">
-						<img src="http://lucadesign.local/wp-content/uploads/2021/09/service.png" alt="">
-					</div>
-					<!-- /.ly_service_inner_right -->
+					<!-- /.ly_strength_inner -->
+
 				</div>
-				<!-- /.ly_service_inner -->
+				<!-- /.ly_strength_wrapper -->
+
 			</div>
-			<!-- /.ly_service_wrapper -->
-		</section>
+			<!-- /.ly_strength -->
 
 		<?php endwhile; ?>
 

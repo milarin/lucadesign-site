@@ -174,172 +174,6 @@ p {
 a {
   transition: 0.25s;
 }
-.ly_service {
-  margin: 0;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  color: #fff;
-  padding-top: 100px;
-  padding-bottom: 120px;
-}
-.ly_service > *:first-child {
-  margin-top: 0;
-}
-.ly_service h2, .ly_service h3, .ly_service h4, .ly_service h5, .ly_service h6 {
-  font-weight: unset;
-  line-height: unset;
-  font-feature-settings: unset;
-  margin-top: unset;
-  margin-bottom: unset;
-}
-.ly_service h2 {
-  font-size: unset;
-  border-bottom: unset;
-  padding-bottom: unset;
-}
-@media screen and (max-width: 767px) {
-  .ly_service h2 {
-    font-size: unset;
-  }
-}
-.ly_service h3 {
-  font-size: unset;
-}
-@media screen and (max-width: 767px) {
-  .ly_service h3 {
-    font-size: unset;
-  }
-}
-.ly_service h4 {
-  font-size: unset;
-}
-@media screen and (max-width: 767px) {
-  .ly_service h4 {
-    font-size: unset;
-  }
-}
-.ly_service p {
-  line-height: unset;
-}
-.ly_service p, .ly_service ul, .ly_service ol, .ly_service figure {
-  margin-bottom: unset;
-}
-.ly_service > *:last-child {
-  margin-bottom: 0;
-}
-@media screen and (max-width: 767px) {
-  .ly_service {
-    padding-top: 50px;
-    padding-bottom: 60px;
-  }
-}
-.ly_service .ly_service_wrapper {
-  width: 100%;
-  max-width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.ly_service .ly_service_wrapper .el_h2_ruby {
-  margin-bottom: 15px;
-  border-color: #fff;
-}
-@media screen and (max-width: 767px) {
-  .ly_service .ly_service_wrapper .el_h2_ruby {
-    margin-bottom: 10px;
-  }
-}
-.ly_service .ly_service_wrapper .el_h2 {
-  margin-bottom: 60px;
-}
-@media screen and (max-width: 767px) {
-  .ly_service .ly_service_wrapper .el_h2 {
-    margin-bottom: 30px;
-  }
-}
-.ly_service .ly_service_wrapper .ly_service_inner {
-  display: flex;
-  justify-content: space-between;
-}
-.ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left, .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner__right {
-  width: 50%;
-}
-@media screen and (max-width: 1024px) {
-  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left {
-    width: 60%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left {
-    width: 100%;
-  }
-}
-.ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left .el_service_h3 {
-  margin-bottom: 40px;
-}
-@media screen and (max-width: 767px) {
-  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left .el_service_h3 {
-    margin-bottom: 20px;
-  }
-}
-.ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left .el_service_txtarea {
-  margin-bottom: 60px;
-}
-@media screen and (max-width: 767px) {
-  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left .el_service_txtarea {
-    margin-bottom: 40px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left .el_btn {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_right {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_right {
-    display: none;
-  }
-}
-p.el_h2_ruby {
-  font-size: 0.875rem;
-  border-top: 1px solid #333333;
-  line-height: 25px;
-}
-h2.el_h2 {
-  font-size: 2.875rem;
-  letter-spacing: 2.3px;
-  font-weight: bold;
-}
-@media screen and (max-width: 767px) {
-  h2.el_h2 {
-    font-size: 2rem;
-  }
-}
-h3.el_service_h3 {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 60px;
-}
-@media screen and (max-width: 767px) {
-  h3.el_service_h3 {
-    font-size: 1.5rem;
-  }
-}
-p.el_service_txtarea {
-  font-weight: normal;
-  line-height: 29px;
-}
-@media screen and (max-width: 767px) {
-  p.el_service_txtarea {
-    font-size: 0.875rem;
-  }
-}
 .el_cta_btn {
   font-size: 0.875rem;
   background-color: #333;
@@ -588,4 +422,306 @@ p.el_service_txtarea {
 .bl_cta .bl_cta_bottom .bl_cta_bottom_p {
   font-size: 0.875rem;
 }
-/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Flucadesign.local%2F%22%2C%22sources%22%3A%5B%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fgutenberg.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fbase%2F_base.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fbase%2F_typography.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fabstract%2F_mixin.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fbase%2F_animation.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fgutenberg%2F_service.scss%22%2C%22%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fgutenberg%2F_cta.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BACGA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAsBA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQA%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAASA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BADlIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEIA%3BAAAA%3BAAAA%3BAAAA%3BACgDQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BADxCR%3BAAAA%3BAAAA%3BAAAA%3BACwCQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BADhCR%3BAAAA%3BAAAA%3BAAAA%3BACgCQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BADxBR%3BAAAA%3BAAAA%3BAAAA%3BACwBQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BADhBR%3BAAAA%3BAAAA%3BACgBQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BADTR%3BAAAA%3BAAAA%3BACSQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAHpDR%3BAEmDA%3BAAAA%3BAAAA%3BACCQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAHpDR%3BAAAA%3BAAAA%3BAAAA%3BAIGA%3BAAAA%3BAAAA%3BACHA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAF4MI%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAWA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAtKI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAA8KJ%3BAAAA%3BAAAA%3BAA9KI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAoLJ%3BAAAA%3BAAAA%3BAApLI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAA0LJ%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAnMI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAE1CP%3BAAAA%3BAAAA%3BA%3BA%3BA%3BA%3BA%3BAAEC%3BAAAA%3BAAAA%3BAAAA%3BAFwCM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEjCN%3BAAAA%3BAAAA%3BAFiCM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAE3BN%3BAAAA%3BAAAA%3BAAAA%3BAAGC%3BAAAA%3BAAAA%3BAFiDK%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAzBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEbJ%3BAAAA%3BAAAA%3BAFaI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEPJ%3BAAAA%3BAAAA%3BAFOI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAyBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAzBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEiBR%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAFvBQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEgCR%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAFhCQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEyCR%3BAAAA%3BAAAA%3BAAAA%3BAFzCQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIpDR%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAJ6EQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAI3DP%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQD%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAJsKI%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAWA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAtKI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAA8KJ%3BAAAA%3BAAAA%3BAA9KI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAoLJ%3BAAAA%3BAAAA%3BAApLI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAA0LJ%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAA1KI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIhCP%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BA%3BA%3BA%3BA%3BA%3BAJOO%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAICN%3BAAAA%3BAAAA%3BAJDM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAION%3BAAAA%3BAAAA%3BAJPM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAyBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIHP%3BAAAA%3BAAAA%3BAJGO%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIGN%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAJHM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAzBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIuCN%3BAAAA%3BAAAA%3BAJdM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAImBL%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAJ%2FCK%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAI8DP%3BAAAA%3BAAAA%3BAJ9DO%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAImEN%3BAAAA%3BAAAA%3BAAEC%3BAAAA%3BAAAA%3BAAEC%3BAAAA%3BAAAA%3BAAMF%3BAAAA%3BAAAA%3BAAGE%3BAAAA%3BAAAA%3BAAMF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAJ7DM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAzBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIqGL%3BAAAA%3BAAAA%3BAAAA%3BAJ5EK%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIsFN%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAJ%2FGM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIyHN%3BAAAA%3BAAAA%22%7D */
+.ly_service {
+  margin: 0;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.ly_service > *:first-child {
+  margin-top: 0;
+}
+.ly_service h2, .ly_service h3, .ly_service h4, .ly_service h5, .ly_service h6 {
+  font-weight: unset;
+  line-height: unset;
+  font-feature-settings: unset;
+  margin-top: unset;
+  margin-bottom: unset;
+}
+.ly_service h2 {
+  font-size: unset;
+  border-bottom: unset;
+  padding-bottom: unset;
+}
+@media screen and (max-width: 767px) {
+  .ly_service h2 {
+    font-size: unset;
+  }
+}
+.ly_service h3 {
+  font-size: unset;
+}
+@media screen and (max-width: 767px) {
+  .ly_service h3 {
+    font-size: unset;
+  }
+}
+.ly_service h4 {
+  font-size: unset;
+}
+@media screen and (max-width: 767px) {
+  .ly_service h4 {
+    font-size: unset;
+  }
+}
+.ly_service p {
+  line-height: unset;
+}
+.ly_service p, .ly_service ul, .ly_service ol, .ly_service figure {
+  margin-bottom: unset;
+}
+.ly_service > *:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .ly_service {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+}
+.ly_service .ly_service_wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.ly_service .ly_service_wrapper .el_h2_ruby {
+  margin-bottom: 15px;
+  border-color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .ly_service .ly_service_wrapper .el_h2_ruby {
+    margin-bottom: 10px;
+  }
+}
+.ly_service .ly_service_wrapper .el_h2 {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .ly_service .ly_service_wrapper .el_h2 {
+    margin-bottom: 30px;
+  }
+}
+.ly_service .ly_service_wrapper .ly_service_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left, .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner__right {
+  width: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left {
+    width: 100%;
+  }
+}
+.ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left .el_service_h3 {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left .el_service_h3 {
+    margin-bottom: 20px;
+  }
+}
+.ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left .el_service_txtarea {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left .el_service_txtarea {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_left .el_btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_right {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ly_service .ly_service_wrapper .ly_service_inner .ly_service_inner_right {
+    display: none;
+  }
+}
+p.el_h2_ruby {
+  font-size: 0.875rem;
+  border-top: 1px solid #333333;
+  line-height: 25px;
+}
+h2.el_h2 {
+  font-size: 2.875rem;
+  letter-spacing: 2.3px;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  h2.el_h2 {
+    font-size: 2rem;
+  }
+}
+h3.el_service_h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 60px;
+}
+@media screen and (max-width: 767px) {
+  h3.el_service_h3 {
+    font-size: 1.5rem;
+  }
+}
+p.el_service_txtarea {
+  font-weight: normal;
+  line-height: 29px;
+}
+@media screen and (max-width: 767px) {
+  p.el_service_txtarea {
+    font-size: 0.875rem;
+  }
+}
+.ly_strength {
+  margin: 0;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.ly_strength > *:first-child {
+  margin-top: 0;
+}
+.ly_strength h2, .ly_strength h3, .ly_strength h4, .ly_strength h5, .ly_strength h6 {
+  font-weight: unset;
+  line-height: unset;
+  font-feature-settings: unset;
+  margin-top: unset;
+  margin-bottom: unset;
+}
+.ly_strength h2 {
+  font-size: unset;
+  border-bottom: unset;
+  padding-bottom: unset;
+}
+@media screen and (max-width: 767px) {
+  .ly_strength h2 {
+    font-size: unset;
+  }
+}
+.ly_strength h3 {
+  font-size: unset;
+}
+@media screen and (max-width: 767px) {
+  .ly_strength h3 {
+    font-size: unset;
+  }
+}
+.ly_strength h4 {
+  font-size: unset;
+}
+@media screen and (max-width: 767px) {
+  .ly_strength h4 {
+    font-size: unset;
+  }
+}
+.ly_strength p {
+  line-height: unset;
+}
+.ly_strength p, .ly_strength ul, .ly_strength ol, .ly_strength figure {
+  margin-bottom: unset;
+}
+.ly_strength > *:last-child {
+  margin-bottom: 0;
+}
+.ly_strength .ly_strength_wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.ly_strength .ly_strength_wrapper .ly_strength_inner .bl_strength {
+  border-bottom: 1px solid #DDDDDD;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .ly_strength .ly_strength_wrapper .ly_strength_inner .bl_strength {
+    flex-flow: column-reverse;
+  }
+}
+.ly_strength .ly_strength_wrapper .ly_strength_inner .bl_strength:last-child {
+  border: none;
+}
+.ly_strength .ly_strength_wrapper .ly_strength_inner .bl_strength:nth-child(2n) {
+  flex-flow: row-reverse;
+  flex-flow: column-reverse;
+}
+.ly_strength .ly_strength_wrapper .ly_strength_inner .bl_strength_number {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .ly_strength .ly_strength_wrapper .ly_strength_inner .bl_strength_number {
+    margin-bottom: 10px;
+  }
+}
+.ly_strength .ly_strength_wrapper .ly_strength_inner .bl_strength_h3 {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .ly_strength .ly_strength_wrapper .ly_strength_inner .bl_strength_h3 {
+    margin-bottom: 20px;
+  }
+}
+.bl_strength {
+  display: flex;
+  justify-content: space-between;
+}
+.bl_strength .bl_strength_left, .bl_strength .bl_strength_right {
+  width: 47.435%;
+}
+@media screen and (max-width: 767px) {
+  .bl_strength .bl_strength_left, .bl_strength .bl_strength_right {
+    width: 100%;
+  }
+}
+.bl_strength .bl_strength_left .bl_strength_number {
+  color: #2996DE;
+  font-size: 0.875rem;
+  position: relative;
+  padding-left: 40px;
+}
+.bl_strength .bl_strength_left .bl_strength_number::before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 30px;
+  height: 2px;
+  content: '';
+  background: #2996DE;
+}
+.bl_strength .bl_strength_left .bl_strength_h3 {
+  font-size: 2rem;
+  line-height: 60px;
+  font-weight: normal;
+}
+@media screen and (max-width: 767px) {
+  .bl_strength .bl_strength_left .bl_strength_h3 {
+    font-size: 1.5rem;
+  }
+}
+.bl_strength .bl_strength_left .bl_strength_txt {
+  font-weight: normal;
+}
+@media screen and (max-width: 767px) {
+  .bl_strength .bl_strength_left .bl_strength_txt {
+    letter-spacing: 1px;
+  }
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Flucadesign.local%2F%22%2C%22sources%22%3A%5B%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fgutenberg.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fbase%2F_base.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fbase%2F_typography.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fabstract%2F_mixin.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fbase%2F_animation.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fgutenberg%2F_cta.scss%22%2C%22%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fgutenberg%2F_service.scss%22%2C%22wp-content%2Fthemes%2Fmaster%2Fscss%2Fgutenberg%2F_strength.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BACGA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAsBA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQA%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAASA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BAAIA%3BAAAA%3BAAAA%3BADlIA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEIA%3BAAAA%3BAAAA%3BAAAA%3BACgDQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BADxCR%3BAAAA%3BAAAA%3BAAAA%3BACwCQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BADhCR%3BAAAA%3BAAAA%3BAAAA%3BACgCQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BADxBR%3BAAAA%3BAAAA%3BAAAA%3BACwBQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BADhBR%3BAAAA%3BAAAA%3BACgBQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BADTR%3BAAAA%3BAAAA%3BACSQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAHpDR%3BAEmDA%3BAAAA%3BAAAA%3BACCQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAHpDR%3BAAAA%3BAAAA%3BAAAA%3BAIGA%3BAAAA%3BAAAA%3BACHA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAF6EQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAE3DP%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAOA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAQD%3BAAAA%3BAAAA%3BAAAA%3BAAKA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAFsKI%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAWA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAtKI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAA8KJ%3BAAAA%3BAAAA%3BAA9KI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAoLJ%3BAAAA%3BAAAA%3BAApLI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAA0LJ%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAA1KI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEhCP%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BA%3BA%3BA%3BA%3BA%3BAFOO%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAECN%3BAAAA%3BAAAA%3BAFDM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEON%3BAAAA%3BAAAA%3BAFPM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAyBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEHP%3BAAAA%3BAAAA%3BAFGO%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEGN%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAFHM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAzBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEuCN%3BAAAA%3BAAAA%3BAFdM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEmBL%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAF%2FCK%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAE8DP%3BAAAA%3BAAAA%3BAF9DO%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEmEN%3BAAAA%3BAAAA%3BAAEC%3BAAAA%3BAAAA%3BAAEC%3BAAAA%3BAAAA%3BAAMF%3BAAAA%3BAAAA%3BAAGE%3BAAAA%3BAAAA%3BAAMF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAF7DM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAzBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEqGL%3BAAAA%3BAAAA%3BAAAA%3BAF5EK%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEsFN%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAF%2FGM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAEyHN%3BAAAA%3BAAAA%3BAE7KF%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAJ4MI%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAWA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAtKI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAA8KJ%3BAAAA%3BAAAA%3BAA9KI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAoLJ%3BAAAA%3BAAAA%3BAApLI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAA0LJ%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAnMI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAI1CP%3BAAAA%3BAAAA%3BA%3BA%3BA%3BA%3BA%3BAAEC%3BAAAA%3BAAAA%3BAAAA%3BAJwCM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIjCN%3BAAAA%3BAAAA%3BAJiCM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAI3BN%3BAAAA%3BAAAA%3BAAAA%3BAAGC%3BAAAA%3BAAAA%3BAJiDK%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAzBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIbJ%3BAAAA%3BAAAA%3BAJaI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIPJ%3BAAAA%3BAAAA%3BAJOI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAyBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAzBA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIiBR%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAJvBQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIgCR%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAJhCQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAIyCR%3BAAAA%3BAAAA%3BAAAA%3BAJzCQ%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAKpDR%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAL4MI%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAWA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAtKI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAA8KJ%3BAAAA%3BAAAA%3BAA9KI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAoLJ%3BAAAA%3BAAAA%3BAApLI%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAA0LJ%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAMA%3BAAAA%3BAAAA%3BAKpPH%3BAAAA%3BAAAA%3BA%3BA%3BA%3BA%3BA%3BAAGE%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAL8CK%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAKvCJ%3BAAAA%3BAAAA%3BAAGA%3BAAAA%3BAAAA%3BAAAA%3BAAKD%3BAAAA%3BAAAA%3BAL%2BBK%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAKzBL%3BAAAA%3BAAAA%3BALyBK%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAKfR%3BAAAA%3BAAAA%3BAAAA%3BAAGC%3BAAAA%3BAAAA%3BALYO%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAKJN%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAKC%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAAUD%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BALXM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%3BAKmBN%3BAAAA%3BAAAA%3BALnBM%3BAAAA%3BAAAA%3BAAAA%3BAAAA%22%7D */

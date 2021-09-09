@@ -193,106 +193,63 @@
 }
 
 
-main {
-	height: 2000px;
-}
 
-// .ly_service {
+// .ly_strength {
 // 	@include contentAreaFullWidth;
-// 	background-image: url('http://lucadesign.local/wp-content/uploads/2021/09/service_bg.png');
-// 	background-repeat: no-repeat;
-// 	background-size: cover;
-// 	color: #fff;
-// 	padding-top: 100px;
-// 	padding-bottom: 120px;
-// 	@include media(sm) {
-// 		padding-top: 50px;
-// 		padding-bottom: 60px;
-// 	}
-// 	.ly_service_wrapper {
+// 	.ly_strength_wrapper {
 // 		@include contentArea;
-// 		.el_h2_ruby {
-// 			margin-bottom: 15px;
-// 			border-color: #fff;
-// 			@include media(sm) {
-// 				margin-bottom: 10px;
-// 			}
-// 		}
-// 		.el_h2 {
-// 			margin-bottom: 60px;
-// 			@include media(sm) {
-// 				margin-bottom: 30px;
-// 			}
-// 		}
-// 		.ly_service_inner {
-// 			display: flex;
-// 			justify-content: space-between;
-// 			.ly_service_inner_left,
-// 			.ly_service_inner__right {
-// 				width: 50%;
-// 			}
-// 			.ly_service_inner_left {
-// 				@include media(smmd) {
-// 					width: 60%;
+// 		.ly_strength_inner {
+// 			.bl_strength {
+// 				border-bottom: 1px solid #DDDDDD;
+// 				padding-top: 60px;
+// 				padding-bottom: 40px;
+// 				&:last-child {
+// 					border: none;
 // 				}
-// 				@include media(sm) {
-// 					width: 100%;
-// 				}
-// 				.el_service_h3 {
-// 					margin-bottom: 40px;
-// 					@include media(sm) {
-// 						margin-bottom: 20px;
-// 					}
-// 				}
-// 				.el_service_txtarea {
-// 					margin-bottom: 60px;
-// 					@include media(sm) {
-// 						margin-bottom: 40px;
-// 					}
-// 				}
-// 				.el_btn {
-// 					@include media(smmd) {
-// 						width: 100%;
-// 					}
+// 				&:nth-child(2n) {
+// 					flex-flow: row-reverse;
 // 				}
 // 			}
-// 			.ly_service_inner_right {
-// 				@include media(smmd) {
-// 					width: 40%;
-// 				}
-// 				@include media(sm) {
-// 					display: none;
-// 				}
+// 			.bl_strength_number {
+// 				margin-bottom: 20px;
+// 			}
+// 			.bl_strength_h3 {
+// 				margin-bottom: 40px;
 // 			}
 // 		}
 // 	}
 // }
 
-// .el_h2_ruby {
-// 	font-size: 0.875rem;
-// 	border-top: 1px solid #333333;
-// }
-
-// .el_h2 {
-// 	font-size: 2.875rem;
-// 	letter-spacing: 2.3px;
-// 	font-weight: bold;
-// 	@include media(sm) {
-// 		font-size: 2rem;
+// .bl_strength {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	.bl_strength_left,
+// 	.bl_strength_right {
+// 		width: 47.435%;
 // 	}
-// }
-
-// .el_service_h3 {
-// 	font-size: 2rem;
-// 	font-weight: 400;
-// 	@include media(sm) {
-// 		font-size: 1.5rem;
-// 	}
-// }
-
-// .el_service_txtarea {
-// 	font-weight: normal;
-// 	@include media(sm) {
-// 		font-size: 0.875rem;
+// 	.bl_strength_left {
+// 		.bl_strength_number {
+// 			color: #2996DE;
+// 			font-size: 0.875rem;
+// 			position: relative;
+// 			padding-left: 40px;
+// 			&::before {
+// 				position: absolute;
+// 				top: calc(50% - 1px);
+// 				left: 0;
+// 				width: 30px;
+// 				height: 2px;
+// 				content: '';
+// 				background: #2996DE;
+// 			}
+// 		}
+// 		.bl_strength_h3 {
+// 			font-size: 2rem;
+// 			line-height: 60px;
+// 			font-weight: normal;
+// 		}
+// 		.bl_strength_txt {
+// 			font-weight: normal;
+// 		}
 // 	}
 // }
