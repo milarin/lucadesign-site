@@ -1,0 +1,178 @@
+.el_cta_btn {
+	@include fontSize(14);
+	background-color: $theme_color;
+	color: $layer_color;
+	display: inline-block;
+	width: 435px;
+	max-width: 74.3589%;
+	padding: 16px 0;
+	border-bottom: 1px solid #fff;
+	text-align: left;
+	text-decoration: none;
+	transition: .25s;
+	position: relative;
+	font-weight: bold;
+	@include media(smmd) {
+		max-width: 100%;
+		width: 100%;
+	}
+	&:after {
+		content: '→';
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+	&:focus,
+	&:hover {
+		background-color: $theme_color;
+		border-color: currentColor;
+		color: #fff;
+	}
+}
+
+.el_h2_ruby {
+	font-size: 0.875rem;
+	border-top: 1px solid #333333;
+}
+
+.ly_cta {
+	@include resetcss;
+	@include contentAreaFullWidth;
+	@include media(smmd) {
+		background: rgba($color: #eee, $alpha: .3);
+		background-image: unset !important;
+	}
+	.ly_cta_wrapper {
+		padding-top: 80px;
+		padding-bottom: 60px;
+		@include contentArea;
+		@include media(sm) {
+			padding-top: 50px;
+			padding-bottom: 30px;
+		}
+		.el_h2_ruby {
+			margin-bottom: 40px;
+			@include media(sm) {
+				margin-bottom: 30px;
+			}
+		}
+		.bl_cta_inner {
+			margin-bottom: 60px;
+			@include media(sm) {
+				margin-bottom: 30px;
+			}
+			.bl_cta_h2 {
+				@include media(smmd) {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+.bl_cta {
+	.bl_cta_inner {
+		display: flex;
+		@include media(smmd) {
+			display: block;
+			text-align: center;
+		}
+		.bl_cta_h2 {
+			width: 50%;
+			font-size: 2rem;
+			font-weight: 500;
+			@include media(smmd) {
+				width: 100%;
+			}
+			@include media(sm) {
+				font-size: 1.5rem;
+			}
+		}
+		.el_req {
+			width: 50%;
+			@include media(smmd) {
+				width: 100%;
+			}
+			.el_req_ruby {
+				font-size: 0.875rem;
+			}
+			.el_req_call {
+				font-size: 3rem;
+				@include media(sm) {
+					font-size: 2rem;
+				}
+				svg {
+					@include media(sm) {
+						width: 40px;
+						display: inline-flex;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+	.bl_cta_bottom {
+		display: flex;
+		@include media(sm) {
+			display: block;
+		}
+		.bl_cta_bottom_req {
+			background-color: $sub_color;
+			.el_cta_btn {
+				background-color: $sub_color;
+				&:focus,
+				&:hover {
+					border-bottom: 1px solid $theme_color;
+				}
+			}
+		}
+		.bl_cta_bottom_pri {
+			background-color: $theme_color;
+			.el_cta_btn {
+				&:focus,
+				&:hover {
+					border-bottom: 1px solid $sub_color;
+				}
+			}
+		}
+		.bl_cta_bottom_req,
+		.bl_cta_bottom_pri {
+			color: #fff;
+			width: 50%;
+			padding: 50px 75px;
+			position: relative;
+			height: 300px;
+			@include media(smmd) {
+				padding: 50px 40px;
+				height: auto;
+			}
+			@include media(sm) {
+				width: 100%;
+				padding: 40px 20px;
+			}
+			.el_cta_btn {
+				position: absolute;
+				bottom: 50px;
+				@include media(smmd) {
+					position: relative;
+					margin-top: 35px;
+					bottom: unset;
+				}
+			}
+		}
+		.bl_cta_bottom_h3 {
+			font-size: 1.375rem;
+			margin-bottom: 30px;
+			font-weight: bold;
+			letter-spacing: 0.88px;
+			@include media(sm) {
+				font-size: 1.25rem;
+				margin-bottom: 20px;
+			}
+		}
+		.bl_cta_bottom_p {
+			font-size: 0.875rem;
+		}
+	}
+}

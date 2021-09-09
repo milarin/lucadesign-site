@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+//概要
+@import "abstract/variable";
+@import "abstract/mixin";
+@import "abstract/function";
+
+/*ベースグループ
+======================================*/
+/******リセット＋ベース******/
+@import "base/base";
+/******タイポグラフィ******/
+@import "base/typography";
+/******アニメーション******/
+@import "base/animation";
+
+
+// グーテンベルグブロック
+@import "gutenberg/_author.scss";
+@import "gutenberg/_cta.scss";

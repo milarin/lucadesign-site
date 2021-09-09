@@ -19,7 +19,6 @@ $nav_info = array( //フッターナビゲーション2
 --------------------------------*/
 ?>
 				<footer id="colophon" class="site-footer">
-					<a class="el_btn" href="<?php the_field( 'ad_inquiryLink', 'option' ); ?>">料金表ダウンロード</a>
 					<div class="ly_footer_wrapper">
 
 						<div class="ly_footer">

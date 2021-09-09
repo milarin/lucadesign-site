@@ -199,3 +199,53 @@
         margin: 0 percentage($halfgap / $content_width_calc);
     }
 }
+
+@mixin resetcss {
+	margin: 0;
+    > *:first-child {
+        margin-top: 0;
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 { //見出し
+        font-weight: unset;
+        line-height: unset;
+        font-feature-settings: unset;
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+    h2 {
+        font-size: unset;
+        border-bottom: unset;
+        padding-bottom: unset;
+        @include media(sm) {
+            font-size: unset;
+        }
+    }
+    h3 {
+        font-size: unset;
+        @include media(sm) {
+            font-size: unset;
+        }
+    }
+    h4 {
+        font-size: unset;
+        @include media(sm) {
+            font-size: unset;
+        }
+    }
+    p { //段落
+        line-height: unset;
+    }
+    p,
+    ul,
+    ol,
+    figure {
+        margin-bottom: unset;
+    }
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
