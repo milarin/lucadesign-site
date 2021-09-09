@@ -16,7 +16,9 @@
 				}
 				&:nth-child(2n) {
 					flex-flow: row-reverse;
-					flex-flow: column-reverse;
+					@include media(sm) {
+						flex-flow: column-reverse;
+					}
 				}
 			}
 			.bl_strength_number {
@@ -67,6 +69,7 @@
 			font-weight: normal;
 			@include media(sm) {
 				font-size: 1.5rem;
+				line-height: unset;
 			}
 		}
 		.bl_strength_txt {
