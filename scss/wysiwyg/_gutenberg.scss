@@ -197,31 +197,74 @@ main {
 	height: 2000px;
 }
 
-// .el_cta_btn {
-// 	background-color: $theme_color;
-// 	color: $layer_color;
-// 	@include fontSize(14);
-// 	display: inline-block;
-// 	width: 435px;
-// 	max-width: 100%;
-// 	padding: 16px 0;
-// 	border-bottom: 1px solid #fff;
-// 	text-align: left;
-// 	text-decoration: none;
-// 	transition: .25s;
-// 	position: relative;
-// 	&:after {
-// 		content: '→';
-// 		position: absolute;
-// 		top: 50%;
-// 		right: 0;
-// 		transform: translateY(-50%);
+// .ly_service {
+// 	@include contentAreaFullWidth;
+// 	background-image: url('http://lucadesign.local/wp-content/uploads/2021/09/service_bg.png');
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// 	color: #fff;
+// 	padding-top: 100px;
+// 	padding-bottom: 120px;
+// 	@include media(sm) {
+// 		padding-top: 50px;
+// 		padding-bottom: 60px;
 // 	}
-// 	&:focus,
-// 	&:hover {
-// 		background-color: $theme_color;
-// 		border-color: currentColor;
-// 		color: #fff;
+// 	.ly_service_wrapper {
+// 		@include contentArea;
+// 		.el_h2_ruby {
+// 			margin-bottom: 15px;
+// 			border-color: #fff;
+// 			@include media(sm) {
+// 				margin-bottom: 10px;
+// 			}
+// 		}
+// 		.el_h2 {
+// 			margin-bottom: 60px;
+// 			@include media(sm) {
+// 				margin-bottom: 30px;
+// 			}
+// 		}
+// 		.ly_service_inner {
+// 			display: flex;
+// 			justify-content: space-between;
+// 			.ly_service_inner_left,
+// 			.ly_service_inner__right {
+// 				width: 50%;
+// 			}
+// 			.ly_service_inner_left {
+// 				@include media(smmd) {
+// 					width: 60%;
+// 				}
+// 				@include media(sm) {
+// 					width: 100%;
+// 				}
+// 				.el_service_h3 {
+// 					margin-bottom: 40px;
+// 					@include media(sm) {
+// 						margin-bottom: 20px;
+// 					}
+// 				}
+// 				.el_service_txtarea {
+// 					margin-bottom: 60px;
+// 					@include media(sm) {
+// 						margin-bottom: 40px;
+// 					}
+// 				}
+// 				.el_btn {
+// 					@include media(smmd) {
+// 						width: 100%;
+// 					}
+// 				}
+// 			}
+// 			.ly_service_inner_right {
+// 				@include media(smmd) {
+// 					width: 40%;
+// 				}
+// 				@include media(sm) {
+// 					display: none;
+// 				}
+// 			}
+// 		}
 // 	}
 // }
 
@@ -230,81 +273,26 @@ main {
 // 	border-top: 1px solid #333333;
 // }
 
-// .ly_cta {
-// 	// background: {
-// 	// 	image: url("http://lucadesign.local/wp-content/uploads/2021/09/cta_bg.png");
-// 	// 	size: contain;
-// 	// 	repeat: no-repeat;
-// 	// }
-// 	// height: 460px;
-// 	@include contentAreaFullWidth;
-// 	.ly_cta_wrapper {
-// 		padding-top: 80px;
-// 		@include contentArea;
-// 		.el_h2_ruby {
-// 			margin-bottom: 40px;
-// 		}
-// 		.bl_cta_inner {
-// 			margin-bottom: 60px;
-// 		}
+// .el_h2 {
+// 	font-size: 2.875rem;
+// 	letter-spacing: 2.3px;
+// 	font-weight: bold;
+// 	@include media(sm) {
+// 		font-size: 2rem;
 // 	}
 // }
 
-// .bl_cta {
-// 	.bl_cta_inner {
-// 		display: flex;
-// 		.bl_cta_h2 {
-// 			width: 50%;
-// 			font-size: 2rem;
-// 		}
-// 		.el_req {
-// 			.el_req_ruby {
-// 				font-size: 0.875rem;
-// 			}
-// 			.el_req_call {
-// 				font-size: 3rem;
-// 			}
-// 		}
+// .el_service_h3 {
+// 	font-size: 2rem;
+// 	font-weight: 400;
+// 	@include media(sm) {
+// 		font-size: 1.5rem;
 // 	}
-// 	.bl_cta_bottom {
-// 		display: flex;
-// 		.bl_cta_bottom_req {
-// 			background-color: $sub_color;
-// 			.el_cta_btn {
-// 				background-color: $sub_color;
-// 				&:focus,
-// 				&:hover {
-// 					border-bottom: 1px solid $theme_color;
-// 				}
-// 			}
-// 		}
-// 		.bl_cta_bottom_pri {
-// 			background-color: $theme_color;
-// 			.el_cta_btn {
-// 				&:focus,
-// 				&:hover {
-// 					border-bottom: 1px solid $sub_color;
-// 				}
-// 			}
-// 		}
-// 		.bl_cta_bottom_req,
-// 		.bl_cta_bottom_pri {
-// 			color: #fff;
-// 			width: 50%;
-// 			padding: 50px 75px;
-// 			position: relative;
-// 			height: 300px;
-// 			.el_cta_btn {
-// 				position: absolute;
-// 				bottom: 50px;
-// 			}
-// 		}
-// 		.bl_cta_bottom_h3 {
-// 			font-size: 1.375rem;
-// 			margin-bottom: 30px;
-// 		}
-// 		.bl_cta_bottom_p {
-// 			font-size: 0.875rem;
-// 		}
+// }
+
+// .el_service_txtarea {
+// 	font-weight: normal;
+// 	@include media(sm) {
+// 		font-size: 0.875rem;
 // 	}
 // }
