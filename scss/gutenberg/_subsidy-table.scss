@@ -1,0 +1,43 @@
+.ly_subsidy_service {
+	@include resetcss;
+	@include contentAreaFullWidth;
+	.ly_subsidy_inner {
+		@include contentArea;
+		overflow-x: scroll;
+		width: 100%;
+	}
+}
+
+table {
+	&.bl_subsidy_table {
+		border-collapse: collapse;
+		border: solid 1px #ddd;
+		white-space: nowrap;
+		width: 100%;
+		@include media(sm) {
+			font-size: 0.875rem;
+		}
+		th {
+			background: $base_fontColor;
+			color: #fff;
+			font-weight: bold;
+			padding: 16px;
+			border-collapse: collapse;
+			border: solid 1px #ddd;
+		}
+		.bl_subsidy_table_th_f {
+			width: 34.1880%;
+		}
+		.bl_subsidy_table_th_s {
+			width: auto;
+		}
+		td {
+			padding: 16px;
+			border-collapse: collapse;
+			border: solid 1px #ddd;
+			a {
+				color: $base_fontColor;
+			}
+		}
+	}
+}

@@ -5,81 +5,64 @@
 
 		<?php while ( have_posts() ) : the_post();?>
 
-			<section class="ly_home_fea">
-
-				<div class="ly_home_fea_wrapper">
-					<h2 class="el_h2_border">ルカデザインのホームページ制作の特徴</h2>
-					
-					<div class="bl_home_fea">
-						<div class="bl_home_fea_wrapper">
-							<p class="bl_home_fea_number"><?php echo sprintf('%02d', $count++) ;?></p>
-							<div class="bl_home_fea_inner">
-								<div class="bl_home_fea_inner_left">
-									<h3 class="bl_home_fea_h3">更新性に優れたホームページ</h3>
-									<p class="bl_home_fea_txt">ホームページで成果を上げるためには、検索エンジンで評価されることが重要です。そのため、ルカデザインでは更新性に優れたWordPressでの制作に特化しています。WordPressを用いたホームページであれば、日々の更新作業をお客様にてご対応いただくことが可能です。お客様が自走できるよう、マニュアルのご用意もお任せください。</p>
-								</div>
-								<!-- /.bl_home_fea_inner_left -->
-								<div class="bl_home_fea_inner_right">
-									<img src="http://lucadesign.local/wp-content/uploads/2021/09/illust1.png" alt="">
-								</div>
-								<!-- /.bl_home_fea_inner_right -->
-							</div>
-							<!-- /.bl_home_fea_inner -->
-						</div>
-						<!-- /.bl_home_fea_wrapper -->
-					</div>
-					<!-- /.bl_home_fea -->
-
-					<div class="bl_home_fea">
-						<div class="bl_home_fea_wrapper">
-							<p class="bl_home_fea_number"><?php echo sprintf('%02d', $count++) ;?></p>
-							<div class="bl_home_fea_inner">
-								<div class="bl_home_fea_inner_left">
-									<h3 class="bl_home_fea_h3">更新性に優れたホームページ</h3>
-									<p class="bl_home_fea_txt">せっかく作ったホームページでも、ユーザーが使いにくいと感じれば、成果につながることはありません。ルカデザインではこれまでの数多くの経験から、ユーザーにとって使いやすいホームページをプロの視点で制作いたします。また、検索エンジンから評価されるために、サイトの軽量化やマシンリーダブルなど、内部対策を施した設計も心がけています。</p>
-									<div class="bl_home_rel">
-										<p>【関連記事】</p>
-										<ul>
-											<li><a href="">1行分の記事タイトルが入ります。1行分の記事タイトルが入ります。1行分…</a></li>
-											<li><a href="">1行分の記事タイトルが入ります。1行分の記事タイトルが入ります。1行分…</a></li>
-										</ul>
-									</div><!-- /.bl_home_rel -->
-								</div>
-								<!-- /.bl_home_fea_inner_left -->
-								<div class="bl_home_fea_inner_right">
-									<img src="http://lucadesign.local/wp-content/uploads/2021/09/illust2.png" alt="">
-								</div>
-								<!-- /.bl_home_fea_inner_right -->
-							</div>
-							<!-- /.bl_home_fea_inner -->
-						</div>
-						<!-- /.bl_home_fea_wrapper -->
-					</div>
-					<!-- /.bl_home_fea -->
-
-					<div class="bl_home_fea">
-						<div class="bl_home_fea_wrapper">
-							<p class="bl_home_fea_number"><?php echo sprintf('%02d', $count++) ;?></p>
-							<div class="bl_home_fea_inner">
-								<div class="bl_home_fea_inner_left">
-									<h3 class="bl_home_fea_h3">更新性に優れたホームページ</h3>
-									<p class="bl_home_fea_txt">ルカデザインではデザインやコーディングなど、それぞれ専門家が対応しています。少数精鋭のチームとして活動しているため、お客様が抱える疑問や不安について迅速に対応可能です。制作中はもちろん、納品後の運用までしっかりサポートいたします。</p>
-								</div>
-								<!-- /.bl_home_fea_inner_left -->
-								<div class="bl_home_fea_inner_right">
-									<img src="http://lucadesign.local/wp-content/uploads/2021/09/illust3.png" alt="">
-								</div>
-								<!-- /.bl_home_fea_inner_right -->
-							</div>
-							<!-- /.bl_home_fea_inner -->
-						</div>
-						<!-- /.bl_home_fea_wrapper -->
-					</div>
-					<!-- /.bl_home_fea -->
-
+			<section class="ly_subsidy_service">
+				<div class="ly_subsidy_inner">
+					<table class="bl_subsidy_table">
+						<tr>
+							<th class="bl_subsidy_table_th_f">補助金</th>
+							<th class="bl_subsidy_table_th_s">対象サービス</th>
+						</tr>
+						<tr>
+							<td>
+								<a href="">小規模企業経営力向上事業費補助金(静岡県)</a>
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
+								<g id="グループ_6236" data-name="グループ 6236" transform="translate(-294.669 -139.272)">
+									<rect id="長方形_23125" data-name="長方形 23125" width="9" height="7" transform="translate(298.17 139.772)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
+									<path id="パス_113" data-name="パス 113" d="M303.169,149.772h-9v-7" transform="translate(1 0)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
+								</g>
+								</svg>
+							</td>
+							<td>ホームページ制作/ECサイト制作/LP制作/SEO対策</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">小規模事業者持続化補助金<br>＜低感染リスク型ビジネス枠＞</a>
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
+								<g id="グループ_6236" data-name="グループ 6236" transform="translate(-294.669 -139.272)">
+									<rect id="長方形_23125" data-name="長方形 23125" width="9" height="7" transform="translate(298.17 139.772)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
+									<path id="パス_113" data-name="パス 113" d="M303.169,149.772h-9v-7" transform="translate(1 0)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
+								</g>
+								</svg>
+							</td>
+							<td>ホームページ制作/ECサイト制作/LP制作/SEO対策</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">IT導入補助金<br>(現時点では弊社では申請できません）</a>
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
+								<g id="グループ_6236" data-name="グループ 6236" transform="translate(-294.669 -139.272)">
+									<rect id="長方形_23125" data-name="長方形 23125" width="9" height="7" transform="translate(298.17 139.772)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
+									<path id="パス_113" data-name="パス 113" d="M303.169,149.772h-9v-7" transform="translate(1 0)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
+								</g>
+								</svg>
+							</td>
+							<td>登録したASP利用のEC制作のみ</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="">事業再構築補助金</a>
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
+								<g id="グループ_6236" data-name="グループ 6236" transform="translate(-294.669 -139.272)">
+									<rect id="長方形_23125" data-name="長方形 23125" width="9" height="7" transform="translate(298.17 139.772)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
+									<path id="パス_113" data-name="パス 113" d="M303.169,149.772h-9v-7" transform="translate(1 0)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
+								</g>
+								</svg>
+							</td>
+							<td>ホームページ制作/ECサイト制作/LP制作/SEO対策</td>
+						</tr>
+					</table>
 				</div>
-				<!-- /.ly_home_wrapper -->
-
+				<!-- /.ly_subsidy_inner -->
 			</section>
 
 		<?php endwhile; ?>
