@@ -55,6 +55,20 @@ function my_acf_init() {
 		'mode'             => 'auto',
 		));
 
+	// ホームページ制作の特徴ブロックを追加
+	acf_register_block(array(
+		'name'             => 'homepage-feature', //英数字で記入!!!!
+		'title'            => __('ホームページ制作の特徴'), //ブロック名
+		'description'      => __('ホームページ制作の特徴'), //ブロックの説明
+		'render_callback'  => 'homepage_feature', //（※注）
+		'render_template'  => 'template-parts/gutenberg/block-homepage-feature',
+		'category'         => 'formatting', //初心者はこのままでOK
+		'icon'             => 'admin-comments', //初心者はこのままでOK
+		'keywords'         => array( 'homepage-feature', 'ホームページ制作の特徴' ), //検索文字列
+		'enqueue_style'    => get_template_directory_uri() . '/css/gutenberg.css',
+		'mode'             => 'auto',
+		));
+
   }
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
@@ -68,4 +82,8 @@ function service( $service ) { //（※注）の文字列と合わせる
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function strength( $strength ) { //（※注）の文字列と合わせる
   get_template_part("template-parts/gutenberg/block-strength"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
+}
+//（※注）で指定した文字列と表示用PHPファイルの関連付け
+function homepage_feature( $feature ) { //（※注）の文字列と合わせる
+  get_template_part("template-parts/gutenberg/block-homepage-feature"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
 }
