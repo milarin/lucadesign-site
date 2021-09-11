@@ -1,0 +1,29 @@
+.ly_subsidy_caution {
+	@include resetcss;
+	@include contentAreaFullWidth;
+	.ly_subsidy_caution_inner {
+		@include contentArea;
+	}
+}
+
+.bl_subsidy_caution {
+	.bl_subsidy_caution_wrapper {
+		padding: 20px 60px;
+		background-color: #F6F6F6;
+		.bl_subsidy_caution_inner {
+			padding: 40px 0;
+			border-bottom: 1px solid #DDDDDD;
+			&:last-child {
+				border-bottom: none;
+			}
+			h3 {
+				font-size: 1.375rem;
+				letter-spacing: 1.1px;
+				font-weight: bold;
+			}
+			p {
+				
+			}
+		}
+	}
+}

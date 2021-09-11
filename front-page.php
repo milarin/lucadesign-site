@@ -5,64 +5,35 @@
 
 		<?php while ( have_posts() ) : the_post();?>
 
-			<section class="ly_subsidy_service">
-				<div class="ly_subsidy_inner">
-					<table class="bl_subsidy_table">
-						<tr>
-							<th class="bl_subsidy_table_th_f">補助金</th>
-							<th class="bl_subsidy_table_th_s">対象サービス</th>
-						</tr>
-						<tr>
-							<td>
-								<a href="">小規模企業経営力向上事業費補助金(静岡県)</a>
-								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
-								<g id="グループ_6236" data-name="グループ 6236" transform="translate(-294.669 -139.272)">
-									<rect id="長方形_23125" data-name="長方形 23125" width="9" height="7" transform="translate(298.17 139.772)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
-									<path id="パス_113" data-name="パス 113" d="M303.169,149.772h-9v-7" transform="translate(1 0)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
-								</g>
-								</svg>
-							</td>
-							<td>ホームページ制作/ECサイト制作/LP制作/SEO対策</td>
-						</tr>
-						<tr>
-							<td>
-								<a href="">小規模事業者持続化補助金<br>＜低感染リスク型ビジネス枠＞</a>
-								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
-								<g id="グループ_6236" data-name="グループ 6236" transform="translate(-294.669 -139.272)">
-									<rect id="長方形_23125" data-name="長方形 23125" width="9" height="7" transform="translate(298.17 139.772)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
-									<path id="パス_113" data-name="パス 113" d="M303.169,149.772h-9v-7" transform="translate(1 0)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
-								</g>
-								</svg>
-							</td>
-							<td>ホームページ制作/ECサイト制作/LP制作/SEO対策</td>
-						</tr>
-						<tr>
-							<td>
-								<a href="">IT導入補助金<br>(現時点では弊社では申請できません）</a>
-								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
-								<g id="グループ_6236" data-name="グループ 6236" transform="translate(-294.669 -139.272)">
-									<rect id="長方形_23125" data-name="長方形 23125" width="9" height="7" transform="translate(298.17 139.772)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
-									<path id="パス_113" data-name="パス 113" d="M303.169,149.772h-9v-7" transform="translate(1 0)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
-								</g>
-								</svg>
-							</td>
-							<td>登録したASP利用のEC制作のみ</td>
-						</tr>
-						<tr>
-							<td>
-								<a href="">事業再構築補助金</a>
-								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
-								<g id="グループ_6236" data-name="グループ 6236" transform="translate(-294.669 -139.272)">
-									<rect id="長方形_23125" data-name="長方形 23125" width="9" height="7" transform="translate(298.17 139.772)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
-									<path id="パス_113" data-name="パス 113" d="M303.169,149.772h-9v-7" transform="translate(1 0)" fill="none" stroke="#3397dc" stroke-miterlimit="10" stroke-width="1"/>
-								</g>
-								</svg>
-							</td>
-							<td>ホームページ制作/ECサイト制作/LP制作/SEO対策</td>
-						</tr>
-					</table>
+			<section class="ly_subsidy_caution">
+				
+				<div class="ly_subsidy_caution_inner">
+
+					<div class="bl_subsidy_caution">
+						<div class="bl_subsidy_caution_wrapper">
+							<div class="bl_subsidy_caution_inner">
+								<h3>審査結果次第では利用できないことも</h3>
+								<p>補助金を利用するためには審査を通過しなければなりません。その結果次第では、ご利用いただけないケースもございます。弊社では補助金を活用した実績が多数ございますので、申請の段階からサポートさせていただきます。</p>
+							</div>
+							<!-- /.bl_subsidy_caution_inner -->
+							<div class="bl_subsidy_caution_inner">
+								<h3>多くの補助金は後払い</h3>
+								<p>一般的に、補助金は後払いで支給されます。そのため、制作にかかる費用について、一度はお客様にご用意いただく必要があります。</p>
+							</div>
+							<!-- /.bl_subsidy_caution_inner -->
+							<div class="bl_subsidy_caution_inner">
+								<h3>申請には時間がかかるため、ゆとりを持ったスケジュールを確保</h3>
+								<p>補助金によっては、申請に時間がかかる場合があります。また、手続きに書類が求められるケースも多いため、余裕を持ったスケジュールで進めるようにしましょう。</p>
+							</div>
+							<!-- /.bl_subsidy_caution_inner -->
+						</div>
+						<!-- /.bl_subsidy_caution_wrapper -->
+					</div>
+					<!-- /.bl_subsidy_caution -->
+
 				</div>
-				<!-- /.ly_subsidy_inner -->
+				<!-- /.ly_subsidy_caution_inner -->
+
 			</section>
 
 		<?php endwhile; ?>
