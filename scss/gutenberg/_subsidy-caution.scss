@@ -13,6 +13,9 @@
 		@include media(smmd) {
 			padding: 20px 40px;
 		}
+		@include media(sm) {
+			padding: 10px 20px;
+		}
 		.bl_subsidy_caution_inner {
 			padding: 40px 0;
 			border-bottom: 1px solid #DDDDDD;
@@ -30,9 +33,16 @@
 				@include media(smmd) {
 					margin-bottom: 20px;
 				}
+				@include media(sm) {
+					margin-bottom: 10px;
+					font-size: 1.25rem;
+					letter-spacing: unset;
+				}
 			}
 			p {
-				
+				@include media(sm) {
+					font-size: 0.875rem;
+				}
 			}
 		}
 	}
