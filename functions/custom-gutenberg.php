@@ -97,6 +97,20 @@ function my_acf_init() {
 		'mode'             => 'auto',
 		));
 
+	// 経営理念ブロックを追加
+	acf_register_block(array(
+		'name'             => 'philosophy', //英数字で記入!!!!
+		'title'            => __('経営理念'), //ブロック名
+		'description'      => __('経営理念'), //ブロックの説明
+		'render_callback'  => 'philosophy', //（※注）
+		'render_template'  => 'template-parts/gutenberg/block-philosophy',
+		'category'         => 'formatting', //初心者はこのままでOK
+		'icon'             => 'admin-comments', //初心者はこのままでOK
+		'keywords'         => array( 'philosophy', '経営理念' ), //検索文字列
+		'enqueue_style'    => get_template_directory_uri() . '/css/gutenberg.css',
+		'mode'             => 'auto',
+		));
+
   }
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
@@ -122,4 +136,8 @@ function subsidy_table( $subsidy_table ) { //（※注）の文字列と合わ�
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function subsidy_caution( $subsidy_caution ) { //（※注）の文字列と合わせる
   get_template_part("template-parts/gutenberg/block-subsidy-caution"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
+}
+//（※注）で指定した文字列と表示用PHPファイルの関連付け
+function philosophy( $philosophy ) { //（※注）の文字列と合わせる
+  get_template_part("template-parts/gutenberg/block-philosophy"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
 }

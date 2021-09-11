@@ -5,35 +5,64 @@
 
 		<?php while ( have_posts() ) : the_post();?>
 
-			<section class="ly_subsidy_caution">
-				
-				<div class="ly_subsidy_caution_inner">
+			<section class="ly_philosophy">
+				<div class="ly_philosophy_inner">
 
-					<div class="bl_subsidy_caution">
-						<div class="bl_subsidy_caution_wrapper">
-							<div class="bl_subsidy_caution_inner">
-								<h3>審査結果次第では利用できないことも</h3>
-								<p>補助金を利用するためには審査を通過しなければなりません。その結果次第では、ご利用いただけないケースもございます。弊社では補助金を活用した実績が多数ございますので、申請の段階からサポートさせていただきます。</p>
+					<div class="bl_philosophy">
+						<div class="bl_philosophy_wrapper">
+							<p class="bl_philosophy_rubi"><span class="bl_philosophy_rubi_txt">未来像</span></p>
+							<div class="bl_philosophy_inner">
+								<div class="bl_philosophy_inner_left">
+									<h2 class="bl_philosophy_h2">VISION</h2>
+								</div>
+								<!-- /.bl_philosophy_inner_left -->
+								<div class="bl_philosophy_inner_right">
+									<h3 class="bl_philosophy_h3">社会から不合理を無くす</h3>
+									<p class="bl_philosophy_txt">不合理＝理に合っていないこと。論理的な筋が通らないこと。<br>社会には大小様々な不合理があります。<br>不合理を見つけ、組織として解決に取り組むことで世の中を良くしていく。</p>
+								</div>
+								<!-- /.bl_philosophy_inner_right -->
 							</div>
-							<!-- /.bl_subsidy_caution_inner -->
-							<div class="bl_subsidy_caution_inner">
-								<h3>多くの補助金は後払い</h3>
-								<p>一般的に、補助金は後払いで支給されます。そのため、制作にかかる費用について、一度はお客様にご用意いただく必要があります。</p>
-							</div>
-							<!-- /.bl_subsidy_caution_inner -->
-							<div class="bl_subsidy_caution_inner">
-								<h3>申請には時間がかかるため、ゆとりを持ったスケジュールを確保</h3>
-								<p>補助金によっては、申請に時間がかかる場合があります。また、手続きに書類が求められるケースも多いため、余裕を持ったスケジュールで進めるようにしましょう。</p>
-							</div>
-							<!-- /.bl_subsidy_caution_inner -->
+							<!-- /.bl_philosophy_inner -->
 						</div>
-						<!-- /.bl_subsidy_caution_wrapper -->
+						<!-- /.bl_philosophy_wrapper -->
 					</div>
-					<!-- /.bl_subsidy_caution -->
+					<!-- /.bl_philosophy -->
+
+					<div class="bl_philosophy">
+						<div class="bl_philosophy_wrapper">
+							<p class="bl_philosophy_rubi"><span class="bl_philosophy_rubi_txt">未来像</span></p>
+							<div class="bl_philosophy_inner">
+								<div class="bl_philosophy_inner_left">
+									<h2 class="bl_philosophy_h2">VISION</h2>
+								</div>
+								<!-- /.bl_philosophy_inner_left -->
+								<div class="bl_philosophy_inner_right">
+									<h3 class="bl_philosophy_h3">社会から不合理を無くす</h3>
+									<div class="bl_philosophy_inner_right_inner">
+										<p class="bl_philosophy_txt">
+											<span class="bl_philosophy_txt_fs18b">不合理の見つけ方</span>
+											情報収集、自己研鑽によって、どこに根幹的な問題があるのか見つける目を養う。<br>Web制作・デジタルマーケティングのプロの視点から、ウェブ集客に関する悩みだけでなく、 潜在的に抱えている問題に踏み込む。
+										</p>
+									</div>
+									<!-- /.bl_philosophy_inner_right_inner -->
+									<div class="bl_philosophy_inner_right_inner">
+										<p class="bl_philosophy_txt">
+											<span class="bl_philosophy_txt_fs18b">不合理の見つけ方</span>
+											情報収集、自己研鑽によって、どこに根幹的な問題があるのか見つける目を養う。<br>Web制作・デジタルマーケティングのプロの視点から、ウェブ集客に関する悩みだけでなく、 潜在的に抱えている問題に踏み込む。
+										</p>
+									</div>
+									<!-- /.bl_philosophy_inner_right_inner -->
+								</div>
+								<!-- /.bl_philosophy_inner_right -->
+							</div>
+							<!-- /.bl_philosophy_inner -->
+						</div>
+						<!-- /.bl_philosophy_wrapper -->
+					</div>
+					<!-- /.bl_philosophy -->
 
 				</div>
-				<!-- /.ly_subsidy_caution_inner -->
-
+				<!-- /.ly_philosophy_inner -->
 			</section>
 
 		<?php endwhile; ?>
