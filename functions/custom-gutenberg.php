@@ -111,33 +111,51 @@ function my_acf_init() {
 		'mode'             => 'auto',
 		));
 
+	// 代表挨拶ブロックを追加
+	acf_register_block(array(
+		'name'             => 'greeting', //英数字で記入!!!!
+		'title'            => __('代表挨拶'), //ブロック名
+		'description'      => __('代表挨拶'), //ブロックの説明
+		'render_callback'  => 'greeting', //（※注）
+		'render_template'  => 'template-parts/gutenberg/block-greeting',
+		'category'         => 'formatting', //初心者はこのままでOK
+		'icon'             => 'admin-comments', //初心者はこのままでOK
+		'keywords'         => array( 'greeting', '代表挨拶' ), //検索文字列
+		'enqueue_style'    => get_template_directory_uri() . '/css/gutenberg.css',
+		'mode'             => 'auto',
+		));
+
   }
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function cta( $cta ) { //（※注）の文字列と合わせる
-  get_template_part("template-parts/gutenberg/block-cta"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
+  get_template_part("template-parts/gutenberg/block-cta");
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function service( $service ) { //（※注）の文字列と合わせる
-  get_template_part("template-parts/gutenberg/block-service"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
+  get_template_part("template-parts/gutenberg/block-service");
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function strength( $strength ) { //（※注）の文字列と合わせる
-  get_template_part("template-parts/gutenberg/block-strength"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
+  get_template_part("template-parts/gutenberg/block-strength");
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function homepage_feature( $feature ) { //（※注）の文字列と合わせる
-  get_template_part("template-parts/gutenberg/block-homepage-feature"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
+  get_template_part("template-parts/gutenberg/block-homepage-feature");
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function subsidy_table( $subsidy_table ) { //（※注）の文字列と合わせる
-  get_template_part("template-parts/gutenberg/block-subsidy-table"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
+  get_template_part("template-parts/gutenberg/block-subsidy-table");
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function subsidy_caution( $subsidy_caution ) { //（※注）の文字列と合わせる
-  get_template_part("template-parts/gutenberg/block-subsidy-caution"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
+  get_template_part("template-parts/gutenberg/block-subsidy-caution");
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function philosophy( $philosophy ) { //（※注）の文字列と合わせる
-  get_template_part("template-parts/gutenberg/block-philosophy"); //表示用PHPのファイルパス。"block-author"は block-author.php の意味で記述してますが、拡張子が省略できるので.phpは記述せず
+  get_template_part("template-parts/gutenberg/block-philosophy");
+}
+//（※注）で指定した文字列と表示用PHPファイルの関連付け
+function greeting( $greeting ) { //（※注）の文字列と合わせる
+  get_template_part("template-parts/gutenberg/block-greeting");
 }

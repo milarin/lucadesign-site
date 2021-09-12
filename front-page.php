@@ -5,64 +5,38 @@
 
 		<?php while ( have_posts() ) : the_post();?>
 
-			<section class="ly_philosophy">
-				<div class="ly_philosophy_inner">
+			<section class="ly_greeting">
+				<div class="ly_greeting_inner">
 
-					<div class="bl_philosophy">
-						<div class="bl_philosophy_wrapper">
-							<p class="bl_philosophy_rubi"><span class="bl_philosophy_rubi_txt">未来像</span></p>
-							<div class="bl_philosophy_inner">
-								<div class="bl_philosophy_inner_left">
-									<h2 class="bl_philosophy_h2">VISION</h2>
-								</div>
-								<!-- /.bl_philosophy_inner_left -->
-								<div class="bl_philosophy_inner_right">
-									<h3 class="bl_philosophy_h3">社会から不合理を無くす</h3>
-									<p class="bl_philosophy_txt">不合理＝理に合っていないこと。論理的な筋が通らないこと。<br>社会には大小様々な不合理があります。<br>不合理を見つけ、組織として解決に取り組むことで世の中を良くしていく。</p>
-								</div>
-								<!-- /.bl_philosophy_inner_right -->
+					<div class="bl_greeting">
+						<div class="bl_greeting_inner">
+							<div class="bl_greeting_inner_left">
+								<img src="http://lucadesign.local/wp-content/uploads/2021/09/AdobeStock_205414386.png" alt="">
 							</div>
-							<!-- /.bl_philosophy_inner -->
-						</div>
-						<!-- /.bl_philosophy_wrapper -->
-					</div>
-					<!-- /.bl_philosophy -->
-
-					<div class="bl_philosophy">
-						<div class="bl_philosophy_wrapper">
-							<p class="bl_philosophy_rubi"><span class="bl_philosophy_rubi_txt">未来像</span></p>
-							<div class="bl_philosophy_inner">
-								<div class="bl_philosophy_inner_left">
-									<h2 class="bl_philosophy_h2">VISION</h2>
-								</div>
-								<!-- /.bl_philosophy_inner_left -->
-								<div class="bl_philosophy_inner_right">
-									<h3 class="bl_philosophy_h3">社会から不合理を無くす</h3>
-									<div class="bl_philosophy_inner_right_inner">
-										<p class="bl_philosophy_txt">
-											<span class="bl_philosophy_txt_fs18b">不合理の見つけ方</span>
-											情報収集、自己研鑽によって、どこに根幹的な問題があるのか見つける目を養う。<br>Web制作・デジタルマーケティングのプロの視点から、ウェブ集客に関する悩みだけでなく、 潜在的に抱えている問題に踏み込む。
-										</p>
-									</div>
-									<!-- /.bl_philosophy_inner_right_inner -->
-									<div class="bl_philosophy_inner_right_inner">
-										<p class="bl_philosophy_txt">
-											<span class="bl_philosophy_txt_fs18b">不合理の見つけ方</span>
-											情報収集、自己研鑽によって、どこに根幹的な問題があるのか見つける目を養う。<br>Web制作・デジタルマーケティングのプロの視点から、ウェブ集客に関する悩みだけでなく、 潜在的に抱えている問題に踏み込む。
-										</p>
-									</div>
-									<!-- /.bl_philosophy_inner_right_inner -->
-								</div>
-								<!-- /.bl_philosophy_inner_right -->
+							<!-- /.bl_greeting_inner_left -->
+							<div class="bl_greeting_inner_right">
+								<p class="bl_greeting_rubi"><span class="bl_greeting_rubi_txt">MESSAGE</p>
+								<h3 class="bl_greeting_h3">1〜2行程の見出しが入ります。<br>1〜2行程の見出しが入ります。</h3>
+								<p class="bl_greeting_txt">
+								この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。
+								<br>
+								<br>
+								<br>
+								この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。
+								<br>
+								<br>
+								<br>
+								</p>
+								<span class="bl_greeting_txt_fs14n">代表　</span><span class="bl_greeting_txt_fs16b">武下 州博</span>
 							</div>
-							<!-- /.bl_philosophy_inner -->
+							<!-- /.bl_greeting_inner_right -->
 						</div>
-						<!-- /.bl_philosophy_wrapper -->
+						<!-- /.bl_greeting_inner -->
 					</div>
-					<!-- /.bl_philosophy -->
+					<!-- /.bl_greeting -->
 
 				</div>
-				<!-- /.ly_philosophy_inner -->
+				<!-- /.ly_greeting_inner -->
 			</section>
 
 		<?php endwhile; ?>
