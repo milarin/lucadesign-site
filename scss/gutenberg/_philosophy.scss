@@ -7,6 +7,9 @@
 			.bl_philosophy_wrapper {
 				.bl_philosophy_rubi {
 					margin-bottom: 15px;
+					@include media(sm) {
+						margin-bottom: 0;
+					}
 				}
 				.bl_philosophy_inner {
 					.bl_philosophy_inner_right {
@@ -15,6 +18,9 @@
 						}
 						.bl_philosophy_txt_fs18b {
 							margin-bottom: 15px;
+							@include media(sm) {
+								margin-bottom: 10px;
+							}
 						}
 						.bl_philosophy_inner_right_inner {
 							margin-top: 30px;
@@ -36,6 +42,9 @@
 	.bl_philosophy_wrapper {
 		border-bottom: 1px solid #DDDDDD;
 		padding: 60px 0;
+		@include media(sm) {
+			padding: 40px 0;
+		}
 		.bl_philosophy_rubi {
 			color: #2996DE;
 			font-size: 0.875rem;
@@ -56,24 +65,53 @@
 		}
 		.bl_philosophy_inner {
 			display: flex;
+			@include media(sm) {
+				display: block;
+			}
 			.bl_philosophy_inner_left {
 				width: 23.0769230%;
+				@include media(smmd) {
+					width: 35%;
+				}
+				@include media(sm) {
+					width: 100%;
+				}
 				.bl_philosophy_h2 {
 					font-size: 2.875rem;
 					letter-spacing: 1.84px;
+					font-weight: bold;
+					@include media(sm) {
+						font-size: 2rem;
+					}
 				}
 			}
 			.bl_philosophy_inner_right {
 				width: auto;
+				@include media(smmd) {
+					width: 65%;
+				}
+				@include media(sm) {
+					width: 100%;
+				}
 				.bl_philosophy_h3 {
 					font-size: 2rem;
 					line-height: 1.65;
     				margin-top: 10px;
+					@include media(sm) {
+						margin-top: 0;
+						line-height: unset;
+						font-size: 1.5rem;
+					}
 				}
-				.bl_philosophy_txt_fs18b {
-					font-size: 1.125rem;
-					font-weight: bold;
-					display: block;
+				.bl_philosophy_txt {
+					@include media(sm) {
+						font-size: 0.875rem;
+					}
+					.bl_philosophy_txt_fs18b {
+						font-size: 1.125rem;
+						font-weight: bold;
+						display: block;
+					}
 				}
 			}
 		}
