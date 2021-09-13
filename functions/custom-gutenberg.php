@@ -125,6 +125,20 @@ function my_acf_init() {
 		'mode'             => 'auto',
 		));
 
+	// 会社概要ブロックを追加
+	acf_register_block(array(
+		'name'             => 'profile', //英数字で記入!!!!
+		'title'            => __('会社概要'), //ブロック名
+		'description'      => __('会社概要'), //ブロックの説明
+		'render_callback'  => 'profile', //（※注）
+		'render_template'  => 'template-parts/gutenberg/block-profile',
+		'category'         => 'formatting', //初心者はこのままでOK
+		'icon'             => 'admin-comments', //初心者はこのままでOK
+		'keywords'         => array( 'profile', '会社概要' ), //検索文字列
+		'enqueue_style'    => get_template_directory_uri() . '/css/gutenberg.css',
+		'mode'             => 'auto',
+		));
+
   }
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
@@ -158,4 +172,8 @@ function philosophy( $philosophy ) { //（※注）の文字列と合わせる
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function greeting( $greeting ) { //（※注）の文字列と合わせる
   get_template_part("template-parts/gutenberg/block-greeting");
+}
+//（※注）で指定した文字列と表示用PHPファイルの関連付け
+function profile( $profile ) { //（※注）の文字列と合わせる
+  get_template_part("template-parts/gutenberg/block-profile");
 }

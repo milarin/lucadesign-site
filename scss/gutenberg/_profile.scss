@@ -1,0 +1,75 @@
+.ly_profile {
+	@include resetcss;
+	@include contentAreaFullWidth;
+	.ly_profile_inner {
+		@include contentArea;
+		display: flex;
+		@include media(sm) {
+			display: block;
+		}
+		.ly_profile_inner_left {
+			width: 22.22222222%;
+			@include media(sm) {
+				width: 100%;
+			}
+			h2.el_h2_border {
+				@include media(sm) {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		.ly_profile_inner_right {
+			width: 77.77777777%;
+			@include media(sm) {
+				width: 100%;
+			}
+		}
+	}
+}
+table {
+	&.bl_profile_table {
+		@include media(sm) {
+			width: 100%;
+			table-layout: fixed;
+
+		}
+		tr {
+			th, td {
+				padding: 35px 0;
+				@include media(smmd) {
+					padding: 25px 0;
+				}
+			}
+			th {
+				text-align: left;
+				width: 23.07692%;
+				border-top: 1px solid #333333;
+				font-weight: bold;
+				@include media(sm) {
+					width: 25%;
+				}
+			}
+			td {
+				width: 75.82417%;
+				border-top: 1px solid #ddd;
+				@include media(sm) {
+					width: 75%;
+					white-space: normal;
+				}
+			}
+		}
+	}
+}
+
+h2.el_h2_border {
+	font-size: 1.625rem;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	padding-left: 20px;
+	border-left: 1.5px solid #333;
+	@include media(sm) {
+		font-size: 1.5rem;
+		padding-left: 10px;
+		letter-spacing: unset;
+	}
+}

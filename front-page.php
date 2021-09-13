@@ -5,38 +5,55 @@
 
 		<?php while ( have_posts() ) : the_post();?>
 
-			<section class="ly_greeting">
-				<div class="ly_greeting_inner">
-
-					<div class="bl_greeting">
-						<div class="bl_greeting_inner">
-							<div class="bl_greeting_inner_left">
-								<img src="http://lucadesign.local/wp-content/uploads/2021/09/AdobeStock_205414386.png" alt="">
-							</div>
-							<!-- /.bl_greeting_inner_left -->
-							<div class="bl_greeting_inner_right">
-								<p class="bl_greeting_rubi"><span class="bl_greeting_rubi_txt">MESSAGE</p>
-								<h3 class="bl_greeting_h3">1〜2行程の見出しが入ります。<br>1〜2行程の見出しが入ります。</h3>
-								<p class="bl_greeting_txt">
-								この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。
-								<br>
-								<br>
-								<br>
-								この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。この文章はダミーテキストです。文字の大きさ・字間・行間などを確認するために入れています。
-								<br>
-								<br>
-								<br>
-								</p>
-								<span class="bl_greeting_txt_fs14n">代表　</span><span class="bl_greeting_txt_fs16b">武下 州博</span>
-							</div>
-							<!-- /.bl_greeting_inner_right -->
-						</div>
-						<!-- /.bl_greeting_inner -->
+			<section class="ly_profile">
+				<div class="ly_profile_inner">
+					<div class="ly_profile_inner_left">
+						<h2 class="el_h2_border">会社概要</h2>
 					</div>
-					<!-- /.bl_greeting -->
-
+					<!-- /.ly_profile_inner_left -->
+					<div class="ly_profile_inner_right">
+						<table class="bl_profile_table">
+							<tr>
+								<th>会社名</th>
+								<td>ルカデザイン合同会社</td>
+							</tr>
+							<tr>
+								<th>会社名</th>
+								<td>武下 州博</td>
+							</tr>
+							<tr>
+								<th>会社名</th>
+								<td>〒417-0052 富士市中央町一丁目10番9号 Zappaビル3F</td>
+							</tr>
+							<tr>
+								<th>会社名</th>
+								<td>0545-67-7075</td>
+							</tr>
+							<tr>
+								<th>会社名</th>
+								<td>2,000,000円</td>
+							</tr>
+							<tr>
+								<th>会社名</th>
+								<td>ルカデザイン合同会社</td>
+							</tr>
+							<tr>
+								<th>会社名</th>
+								<td>8名（2021年4月現在）</td>
+							</tr>
+							<tr>
+								<th>事業内容</th>
+								<td>
+									・インターネットに関する総合コンサルティング業務<br>
+									・ウェブサイトの企画・設計・開発・運営及び販売<br>
+									・ITに関する教室の運営、コンサルティング及びセミナーの企画、開催など
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!-- /.ly_profile_inner_right -->
 				</div>
-				<!-- /.ly_greeting_inner -->
+				<!-- /.ly_profile_inner -->
 			</section>
 
 		<?php endwhile; ?>
