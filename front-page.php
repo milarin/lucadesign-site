@@ -6,7 +6,36 @@
 		<?php while ( have_posts() ) : the_post();?>
 		<?php get_template_part('template-parts/parts/fv') ; //FV読み込み ?>
 
-
+		<section class="ly_works_table">
+			<div class="ly_works_table_wrapper">
+				<div class="ly_works_table_inner">
+					<table class="bl_works_table">
+						<tr>
+							<th>URL</th>
+							<td>https://aichousyucan.com/</td>
+						</tr>
+						<tr>
+							<th>業界・業種</th>
+							<td>コンサルティング</td>
+						</tr>
+						<tr>
+							<th>プロジェクト期間</th>
+							<td>約9ヶ月</td>
+						</tr>
+						<tr>
+							<th>デバイス</th>
+							<td>PC/スマートフォン</td>
+						</tr>
+						<tr>
+							<th>対応範囲</th>
+							<td>戦略立案/サイト設計/デザイン/HTMLコーディング/システム要件定義/システム開発/ プロジェクト管理</td>
+						</tr>
+					</table>
+				</div>
+				<!-- /.ly_works_table_inner -->
+			</div>
+			<!-- /.ly_works_table_wrapper -->
+		</section>
 
 		<?php endwhile; ?>
 

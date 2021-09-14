@@ -6,16 +6,28 @@
 			@include contentArea;
 			max-width: 1170px;
 			padding: 60px 95px;
+			@include media(sm) {
+				padding: 30px;
+			}
 			.ly_thanks_inner_txts {
 				margin-bottom: 60px;
+				@include media(sm) {
+					margin-bottom: 30px;
+				}
 				.ly_thanks_inner_h {
 					font-size: 2rem;
 					font-weight: normal;
 					margin-bottom: 60px;
 					text-align: center;
+					@include media(sm) {
+						font-size: 1.5rem;
+						margin-bottom: 30px;
+					}
 				}
 				.ly_thanks_inner_txt {
-	
+					@include media(sm) {
+						font-size: 0.875rem;
+					}
 				}
 			}
 		}
@@ -32,6 +44,11 @@
 					margin: 15px 32px;
 					background: #151515;
 					color: #fff;
+					@include  media(smmd) {
+						max-width: 100%;
+						margin: unset;
+						margin-bottom: 20px;
+					}
 					&:focus,
 					&:hover {
 						background-color: #fff;
@@ -39,12 +56,7 @@
 						color: #151515;
 					}
 					&:last-child {
-					@include  media(smmd) {
-						max-width: 100%;
-						margin: unset;
-						margin-bottom: 20px;
-							margin-bottom: 0;
-						}
+						margin-bottom: 0;
 					}
 				}
 			}
@@ -57,11 +69,23 @@
 		display: flex;
 		padding: 40px 60px;
 		align-items: center;
+		@include media(sm) {
+			display: block;
+			padding: 15px;
+			text-align: center;
+		}
 		.el_thanks_cta_inner_left {
 			width: 33.67346%;
+			@include media(sm) {
+				width: 100%;
+				margin-bottom: 10px;
+			}
 			p {
 				font-size: 0.875rem;
 				margin-bottom: 10px;
+				@include media(sm) {
+					margin-bottom: 0px;
+				}
 			}
 			span {
 				font-size: 0.875rem;
@@ -73,6 +97,16 @@
 			width: auto;
 			.el_thanks_cta_call {
 				font-size: 3rem;
+				@include media(sm) {
+					font-size: 1.625rem;
+					display: inline-flex;
+					align-items: center;
+				}
+			}
+			svg {
+				@include media(sm) {
+					width: 35px;
+				}
 			}
 		}
 	}

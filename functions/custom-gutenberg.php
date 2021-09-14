@@ -156,13 +156,27 @@ function my_acf_init() {
 	// サンクスブロックを追加
 	acf_register_block(array(
 		'name'             => 'thanks', //英数字で記入!!!!
-		'title'            => __('thanks'), //ブロック名
+		'title'            => __('サンクスページブロック'), //ブロック名
 		'description'      => __('thanksページ用ブロック'), //ブロックの説明
 		'render_callback'  => 'thanks', //（※注）
 		'render_template'  => 'template-parts/gutenberg/block-thanks',
 		'category'         => 'formatting', //初心者はこのままでOK
 		'icon'             => 'admin-comments', //初心者はこのままでOK
 		'keywords'         => array( 'thanks', 'サンクス' ), //検索文字列
+		'enqueue_style'    => get_template_directory_uri() . '/css/gutenberg.css',
+		'mode'             => 'auto',
+		));
+
+	// サンクスブロックを追加
+	acf_register_block(array(
+		'name'             => 'works-table', //英数字で記入!!!!
+		'title'            => __('制作事例テーブル'), //ブロック名
+		'description'      => __('制作事例詳細ページ用テーブルブロック'), //ブロックの説明
+		'render_callback'  => 'works_table', //（※注）
+		'render_template'  => 'template-parts/gutenberg/block-works-table',
+		'category'         => 'formatting', //初心者はこのままでOK
+		'icon'             => 'admin-comments', //初心者はこのままでOK
+		'keywords'         => array( 'works-table', '制作事例' ), //検索文字列
 		'enqueue_style'    => get_template_directory_uri() . '/css/gutenberg.css',
 		'mode'             => 'auto',
 		));
@@ -212,4 +226,8 @@ function fv( $fv ) { //（※注）の文字列と合わせる
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function thanks( $thanks ) { //（※注）の文字列と合わせる
   get_template_part("template-parts/gutenberg/block-thanks");
+}
+//（※注）で指定した文字列と表示用PHPファイルの関連付け
+function works_table( $works_table ) { //（※注）の文字列と合わせる
+  get_template_part("template-parts/gutenberg/block-works-table");
 }
