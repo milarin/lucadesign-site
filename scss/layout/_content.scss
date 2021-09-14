@@ -31,6 +31,25 @@
     }
 }
 
+.ly_bgcolor {
+	background-color: #f6f6f6;
+}
+
+.ly_cont__thanks {
+	width: unset;
+    max-width: unset;
+    padding-right: unset;
+    padding-left: unset;
+	@include contentAreaFullWidth;
+	background-color: #f6f6f6;
+	padding-top: 80px;
+	padding-bottom: 60px;
+	.ly_cont_main {
+		@include contentArea;
+		background-color: #fff;
+	}
+}
+
 /*------ 2カラム -------*/
 .ly_cont.ly_cont__col { //2カラムレイアウト
     display: flex;
@@ -63,8 +82,27 @@
 .ly_cont.ly_cont__archive,
 .ly_cont.ly_cont__404,
 .ly_cont.ly_cont__contact,
+.ly_cont.ly_cont__price_list,
 .ly_cont.ly_cont__privacy-policy {
     padding-top: 80px;
     padding-bottom: 80px;
     @include smSectPadding(o);
+}
+
+.ly_cont.ly_cont__contact,
+.ly_cont.ly_cont__price_list {
+	background-color: #fff;
+	margin-top: 60px;
+	margin-bottom: 120px;
+	border: 1px solid #ddd;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.ly_sect_form {
+
+}
+.ly_contact_header {
+	padding-bottom: 60px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
 }

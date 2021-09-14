@@ -139,6 +139,34 @@ function my_acf_init() {
 		'mode'             => 'auto',
 		));
 
+	// FVブロックを追加
+	acf_register_block(array(
+		'name'             => 'fv', //英数字で記入!!!!
+		'title'            => __('fv'), //ブロック名
+		'description'      => __('fvブロック'), //ブロックの説明
+		'render_callback'  => 'fv', //（※注）
+		'render_template'  => 'template-parts/gutenberg/block-fv',
+		'category'         => 'formatting', //初心者はこのままでOK
+		'icon'             => 'admin-comments', //初心者はこのままでOK
+		'keywords'         => array( 'fv', 'ファーストビュー' ), //検索文字列
+		'enqueue_style'    => get_template_directory_uri() . '/css/gutenberg.css',
+		'mode'             => 'auto',
+		));
+
+	// サンクスブロックを追加
+	acf_register_block(array(
+		'name'             => 'thanks', //英数字で記入!!!!
+		'title'            => __('thanks'), //ブロック名
+		'description'      => __('thanksページ用ブロック'), //ブロックの説明
+		'render_callback'  => 'thanks', //（※注）
+		'render_template'  => 'template-parts/gutenberg/block-thanks',
+		'category'         => 'formatting', //初心者はこのままでOK
+		'icon'             => 'admin-comments', //初心者はこのままでOK
+		'keywords'         => array( 'thanks', 'サンクス' ), //検索文字列
+		'enqueue_style'    => get_template_directory_uri() . '/css/gutenberg.css',
+		'mode'             => 'auto',
+		));
+
   }
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
@@ -176,4 +204,12 @@ function greeting( $greeting ) { //（※注）の文字列と合わせる
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function profile( $profile ) { //（※注）の文字列と合わせる
   get_template_part("template-parts/gutenberg/block-profile");
+}
+//（※注）で指定した文字列と表示用PHPファイルの関連付け
+function fv( $fv ) { //（※注）の文字列と合わせる
+  get_template_part("template-parts/gutenberg/block-fv");
+}
+//（※注）で指定した文字列と表示用PHPファイルの関連付け
+function thanks( $thanks ) { //（※注）の文字列と合わせる
+  get_template_part("template-parts/gutenberg/block-thanks");
 }

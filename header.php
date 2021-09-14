@@ -49,7 +49,7 @@ $nav_pc = array( //グローバルナビゲーション
 						<nav class="bl_headerUtils_nav">
 							<?php wp_nav_menu( $nav_pc ); //グローバルナビゲーション ?>
 							<a class="el_btn" href="<?php the_field( 'ad_inquiryLink', 'option' ); ?>">お問い合わせ</a>
-							<a class="el_btn" href="<?php the_field( 'ad_inquiryLink', 'option' ); ?>">料金表ダウンロード</a>
+							<a class="el_btn" href="<?php the_field( 'ad_priceListLink', 'option' ); ?>">料金表ダウンロード</a>
 						</nav>
 						<!-- /.un_rightNav -->
 					</div>

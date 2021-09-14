@@ -4,8 +4,8 @@
 .el_btn {
 	@include fontSize(14);
 	display: inline-block;
-	width: 360px;
-	max-width: 100%;
+	width: 100%;
+	max-width: 360px;
 	padding: 20px;
 	background-color: #fff;
 	border: 2px solid transparent;
@@ -31,6 +31,15 @@
 		background-color: $theme_color;
 		border-color: currentColor;
 		color: #fff;
+	}
+	&.el_btn_recruit {
+		background-color: #EE6237;
+		color: #fff;
+		font-size: 1.125rem;
+		max-width: 800px;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -160,22 +169,27 @@
     }
 }
 input[type ="submit"].el_btn_submit {
-    display: inline-block;
-    border-radius: 5px;
-    @include fontSize(16);
-    width: 150px;
-    max-width: 100%;
-    padding: .7em;
-    background-color: $theme_color;
-    border: 2px solid transparent;
-    color:  #fff;
-    text-align: center;
-    text-decoration: none;
-    transition: .25s;
-    &:focus,
-    &:hover {
-        background-color: #fff;
-        border-color: currentColor;
-        color: $theme_color;
-    }
+	@include fontSize(18);
+	display: inline-block;
+	width: 100%;
+	max-width: 526px;
+	padding: 27px;
+	background-color: #151515;
+	border: 2px solid transparent;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	transition: .25s;
+	border-radius: 4px;
+	position: relative;
+	padding: {
+		right: 2em;
+		left: 1.38em;
+	}
+	&:focus,
+	&:hover {
+		background-color: #fff;
+		border-color: currentColor;
+		color: #151515;
+	}
 }

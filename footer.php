@@ -28,12 +28,12 @@ $nav_info = array( //フッターナビゲーション2
 									<?php wp_nav_menu( $nav_com ); // ?>
 									<p>INFORMATION</p>
 									<?php wp_nav_menu( $nav_info ); // ?>
-									<a href="/">プライバシーポリシー</a>
+									<a href="/privacy-policy">プライバシーポリシー</a>
 								</div>
 								<!-- /.ly_footer_inner_left -->
 								<div class="ly_footer_inner_right">
 								<a class="el_btn" href="<?php the_field( 'ad_inquiryLink', 'option' ); ?>">お問い合わせ</a>
-								<a class="el_btn" href="<?php the_field( 'ad_inquiryLink', 'option' ); ?>">料金表ダウンロード</a>
+								<a class="el_btn" href="<?php the_field( 'ad_priceListLink', 'option' ); ?>">料金表ダウンロード</a>
 								</div>
 								<!-- /.ly_footer_inner_right -->
 							</div>

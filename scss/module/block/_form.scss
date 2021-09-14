@@ -6,16 +6,30 @@
     select,
     textarea { //入力エリア
         background-color: #fff;
-        border-radius: 0;
+        border-radius: 4px;
     }
+	select {
+		border: 1px solid #333333;
+		padding: 12px 15px;
+	}
+	.dpmenu > select,
+	.dpmenu2 > select {
+		width: 100%;
+	}
+	.dpmenu_year > select,
+	.dpmenu_month > select {
+		width: 100%;
+		max-width: 280px;
+	}
     th {
         width: 25%;
         font-weight: bold;
-        @include fontSize(14);
+        @include fontSize(18);
         text-align: left;
         vertical-align: top;
         padding-right: .5em;
         padding-bottom: .5em;
+		padding-top: 12px;
     }
     td {
         padding-bottom: 2em;
@@ -29,7 +43,18 @@
                 width: 100%;
                 padding-top: 7px;
                 padding-bottom: 7px;
+				padding: 12px 15px;
             }
+			&.dpmenu_year, &.dpmenu_month {
+				display: inline-block;
+				margin-right: 1rem;
+				width: 100%;
+				max-width: 280px;
+				@include media(sm) {
+					width: 85%;
+					margin-bottom: 20px;
+				}
+			}
         }
     }
     th,
@@ -39,9 +64,22 @@
             display: block;
         }
     }
+	br.display_b_sm {
+		display: none;
+		@include media(sm) {
+			display: block;
+		}
+	}
     .ajax-loader {
         display: none!important;
     }
+}
+
+div#wpcf7-f8-p16-o1,
+div#wpcf7-f382-p383-o1 {
+    width: 100%;
+    max-width: 945px;
+    margin: 0 auto;
 }
 
 /*--------------------------------
@@ -96,4 +134,34 @@ textarea:-moz-placeholder{
     border: solid 1px #FF8376!important;
     color: #FF8376;
     font-size: 12px;
+}
+
+.ly_privacy_agree {
+	@include contentArea;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 60px;
+	max-width: 980px;
+	text-align: center;
+	background-color: #F6F6F6;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.ly_privacy_agree_inner {
+		.ly_privacy_agree_inner_txt {
+			margin-bottom: 30px;
+			& > a {
+				color: #3397DC;
+			}
+		}
+		.ly_privacy_agree_inner_txtb {
+			font-weight: bold;
+			.acceptance-442 {
+				margin-right: 20px;
+			}
+		}
+	}
+}
+
+.bl_inquiry_wrapper {
+	padding-top: 60px;
 }

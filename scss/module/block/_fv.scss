@@ -1,0 +1,106 @@
+.ly_fv {
+	@include resetcss;
+	@include contentAreaFullWidth;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 190px;
+	padding-bottom: 190px;
+	max-height: 600px;
+	.ly_fv_inner {
+		@include contentArea;
+		.bl_fv {
+			.bl_fv_inner_txt {
+				& > h1 {
+					margin-bottom: 25px;
+					@include media(sm) {
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
+	&.ly_fv__under {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		max-height: 340px;
+		.bl_fv {
+			.bl_fv_inner_txt {
+				& > h1 {
+					margin-bottom: 15px;
+					@include media(sm) {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+.bl_fv {
+	position: relative;
+	padding: 60px 0px;
+	color: #fff;
+	width: 100%;
+	max-width: 580px;
+	margin: 0 auto;
+	text-align: center;
+	@include media(sm) {
+		padding: 45px 0;
+	}
+	&:before,
+	&:after,
+	.bl_space_block_l,
+	.bl_space_block_r {
+		content: '';
+		width: 32px;
+		height: 32px;
+		position: absolute;
+		display: inline-block;
+	}
+	&:before {
+		border-left: solid 4px #fff;
+		border-top: solid 4px #fff;
+		top:0;
+		left: 0;
+	}
+	.bl_space_block_l {
+		border-left: solid 4px #fff;
+		border-bottom: solid 4px #fff;
+		bottom:0;
+		left: 0;
+	}
+	&:after {
+		border-right: solid 4px #fff;
+		border-bottom: solid 4px #fff;
+		bottom:0;
+		right: 0;
+	}
+	.bl_space_block_r {
+		border-right: solid 4px #fff;
+		border-top: solid 4px #fff;
+		top:0;
+		right: 0;
+	}
+	.bl_fv_inner_txt {
+		> h1 {
+			font-size: 2rem;
+			@include media(sm) {
+				font-size: 1.5rem;
+			}
+		}
+		> p {
+			font-size: 1.25rem;
+			@include media(sm)  {
+				font-size: 0.875rem;
+			}
+		}
+	}
+	&.bl_fv__under {
+		padding: 45px 0;
+		.bl_fv_inner_txt {
+			> p {
+				font-size: 0.875rem;
+			}
+		}
+	}
+}
