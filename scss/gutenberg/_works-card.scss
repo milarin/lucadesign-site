@@ -1,0 +1,103 @@
+
+/*--------------------------------
+    投稿カード：投稿タイプ[works]
+--------------------------------*/
+
+.ly_works_dtl {
+	@include resetcss;
+	@include contentAreaFullWidth;
+	.ly_works_wrapper {
+		@include contentArea;
+		.ly_works_inner {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: -65px;
+			@include media(smmd) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.bl_works_card {
+	width: 30.76923%;
+	margin-right: 3.846153%;
+	margin-bottom: 65px;
+	@include media(smmd) {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	&:nth-of-type(3n) {
+		margin-right: 0;
+	}
+	figure {
+		background: #000;
+		width: 100%;
+		overflow: hidden;
+		box-shadow: 6px 6px 12px #00000029;
+		margin-bottom: 20px;
+		position: relative;
+		> p {
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 0.875rem;
+		}
+		& > img {
+			width: 100%;
+			transition-duration: .3s;
+		}
+	}
+	.bl_works_card_body {
+		h3 {
+			font-size: 1rem;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 0.75rem;
+			counter-reset: #999999;
+			font-weight: normal;
+		}
+	}
+}
+a.bl_works_card {
+	display: block;
+	color: currentColor;
+	text-decoration: none;
+	transition: .25s;
+	&:hover > figure {
+		border-radius: 4px;
+		& > p {
+			display: block;
+			text-decoration: none !important;
+			z-index: 2;
+			color: #fff !important;
+			transition: .25s;
+		}
+		& >img {
+			opacity: 0.4;
+			transform: scale(1.1);
+			transition-duration: .3s;
+		}
+	}
+		
+	& > h3,
+	& > p {
+		transition: .25s;
+	}
+	&:hover,
+	&:focus {
+		cursor: pointer;
+	}
+	&:hover h3,
+	&:focus h3,
+	&:hover p,
+	&:focus p {
+		color: currentColor;
+		text-decoration: underline;
+	}
+}

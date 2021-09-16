@@ -181,6 +181,20 @@ function my_acf_init() {
 		'mode'             => 'auto',
 		));
 
+	// 制作事例カードブロックを追加
+	acf_register_block(array(
+		'name'             => 'works-card', //英数字で記入!!!!
+		'title'            => __('制作事例カード'), //ブロック名
+		'description'      => __('制作事例カードブロック'), //ブロックの説明
+		'render_callback'  => 'works_card', //（※注）
+		'render_template'  => 'template-parts/gutenberg/block-works-card',
+		'category'         => 'formatting', //初心者はこのままでOK
+		'icon'             => 'admin-comments', //初心者はこのままでOK
+		'keywords'         => array( 'works-card', '制作事例' ), //検索文字列
+		'enqueue_style'    => get_template_directory_uri() . '/css/gutenberg.css',
+		'mode'             => 'auto',
+		));
+
   }
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
@@ -230,4 +244,8 @@ function thanks( $thanks ) { //（※注）の文字列と合わせる
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function works_table( $works_table ) { //（※注）の文字列と合わせる
   get_template_part("template-parts/gutenberg/block-works-table");
+}
+//（※注）で指定した文字列と表示用PHPファイルの関連付け
+function works_card( $works_card ) { //（※注）の文字列と合わせる
+  get_template_part("template-parts/gutenberg/block-works-card");
 }

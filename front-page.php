@@ -6,35 +6,94 @@
 		<?php while ( have_posts() ) : the_post();?>
 		<?php get_template_part('template-parts/parts/fv') ; //FV読み込み ?>
 
-		<section class="ly_works_table">
-			<div class="ly_works_table_wrapper">
-				<div class="ly_works_table_inner">
-					<table class="bl_works_table">
-						<tr>
-							<th>URL</th>
-							<td>https://aichousyucan.com/</td>
-						</tr>
-						<tr>
-							<th>業界・業種</th>
-							<td>コンサルティング</td>
-						</tr>
-						<tr>
-							<th>プロジェクト期間</th>
-							<td>約9ヶ月</td>
-						</tr>
-						<tr>
-							<th>デバイス</th>
-							<td>PC/スマートフォン</td>
-						</tr>
-						<tr>
-							<th>対応範囲</th>
-							<td>戦略立案/サイト設計/デザイン/HTMLコーディング/システム要件定義/システム開発/ プロジェクト管理</td>
-						</tr>
-					</table>
+		<section class="ly_post_card">
+			<div class="ly_post_card_wrapper">
+				<div class="ly_post_card_inner ly_post_card_inner__col3">
+
+					<a class="bl_post_card">
+						<figure>
+							<img src="http://lucadesign.local/wp-content/uploads/2021/08/sample_image2.jpg" alt="">
+						</figure>
+						<div class="bl_icon">
+							<img src="http://lucadesign.local/wp-content/uploads/2021/08/subsidy_flow1.svg" alt="">
+						</div>
+						<!-- /.bl_icon -->
+						<div class="bl_post_card_body">
+							<p class="bl_date">2020.01.01</p>
+							<h3 class="bl_post_card_ttl">
+								投稿タイトル投稿タイトル投稿タイトル投稿タイトル
+								投稿タイトル投稿タイトル
+							</h3>
+							<p class="bl_post_card_cat">Webマーケティング</p>
+						</div>
+						<!-- /.bl_post_card_body -->
+					</a>
+					<!-- /.bl_post_card -->
+
+					<a class="bl_post_card">
+						<figure>
+							<img src="http://lucadesign.local/wp-content/uploads/2021/08/sample_image2.jpg" alt="">
+						</figure>
+						<div class="bl_icon">
+							<img src="http://lucadesign.local/wp-content/uploads/2021/08/subsidy_flow1.svg" alt="">
+						</div>
+						<!-- /.bl_icon -->
+						<div class="bl_post_card_body">
+							<p class="bl_date">2020.01.01</p>
+							<h3 class="bl_post_card_ttl">
+								投稿タイトル投稿タイトル投稿タイトル投稿タイトル
+								投稿タイトル投稿タイトル
+							</h3>
+							<p class="bl_post_card_cat">Webマーケティング</p>
+						</div>
+						<!-- /.bl_post_card_body -->
+					</a>
+					<!-- /.bl_post_card -->
+
+					<a class="bl_post_card">
+						<figure>
+							<img src="http://lucadesign.local/wp-content/uploads/2021/08/sample_image2.jpg" alt="">
+						</figure>
+						<div class="bl_icon">
+							<img src="http://lucadesign.local/wp-content/uploads/2021/08/subsidy_flow1.svg" alt="">
+						</div>
+						<!-- /.bl_icon -->
+						<div class="bl_post_card_body">
+							<p class="bl_date">2020.01.01</p>
+							<h3 class="bl_post_card_ttl">
+								投稿タイトル投稿タイトル投稿タイトル投稿タイトル
+								投稿タイトル投稿タイトル
+							</h3>
+							<p class="bl_post_card_cat">Webマーケティング</p>
+						</div>
+						<!-- /.bl_post_card_body -->
+					</a>
+					<!-- /.bl_post_card -->
+
+					<a class="bl_post_card">
+						<figure>
+							<img src="http://lucadesign.local/wp-content/uploads/2021/08/sample_image2.jpg" alt="">
+						</figure>
+						<div class="bl_icon">
+							<img src="http://lucadesign.local/wp-content/uploads/2021/08/subsidy_flow1.svg" alt="">
+						</div>
+						<!-- /.bl_icon -->
+						<div class="bl_post_card_body">
+							<p class="bl_date">2020.01.01</p>
+							<h3 class="bl_post_card_ttl">
+								投稿タイトル投稿タイトル投稿タイトル
+								投稿タイトル
+							</h3>
+							<p class="bl_post_card_cat">Webマーケティング</p>
+						</div>
+						<!-- /.bl_post_card_body -->
+					</a>
+					<!-- /.bl_post_card -->
+
 				</div>
-				<!-- /.ly_works_table_inner -->
+				<!-- /.ly_post_card_inner -->
 			</div>
-			<!-- /.ly_works_table_wrapper -->
+			<!-- /.ly_post_card_wrapper -->
 		</section>
 
 		<?php endwhile; ?>

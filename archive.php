@@ -18,19 +18,23 @@ Template Name:アーカイブテンプレート
             </h1>
         </section>
 
-        <section class="ly_sect__archive ly_sect__archive_main">
-            <?php if ( have_posts() ) : //A ?>
-                <ul class="bl_card_defaultUnit">
-                
-                <?php while ( have_posts() ) : the_post(); //START：メインループ ?>
+		<section class="ly_post_card">
+			<div class="ly_post_card_wrapper">
+				<div class="ly_post_card_inner ly_post_card_inner__col2">
+				
+				<?php if ( have_posts() ) : //A ?>
+				<?php while ( have_posts() ) : the_post(); //START：メインループ ?>
 
-                <?php  get_template_part( 'template-parts/card/card' ); //ブログカードをインク ?>
+					<?php  get_template_part( 'template-parts/card/card-post' ); //ブログカードをインク ?>
 
-                <?php endwhile; //END：メインループ ?>
-            </ul>
-    
-            <?php endif ; //A ?>
-        </section>
+				<?php endwhile; //END：メインループ ?>
+				<?php endif ; //A ?>
+
+				</div>
+				<!-- /.ly_post_card_inner -->
+			</div>
+			<!-- /.ly_post_card_wrapper -->
+		</section>
 
         <?php if (function_exists('responsive_pagination')) { responsive_pagination($additional_loop->max_num_pages); } //ページネーション?>
 

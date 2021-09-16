@@ -67,8 +67,8 @@
         }
     }
     & .ly_cont_side { //サイドバー
-        flex: 0 0 260px;
-        margin-left: (40 / $content_width_calc) * 100%;
+        flex: 0 0 320px;
+        margin-left: 7.264957%;
         @include media(sm){
             margin-left: 0;
         }

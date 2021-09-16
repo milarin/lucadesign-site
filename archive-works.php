@@ -18,25 +18,11 @@ Template Name:workアーカイブテンプレート
             </h1>
         </section>
 
-        <section class="ly_sect__archive ly_sect__archive_main">
-            <?php if ( have_posts() ) : //A ?>
-                <ul class="bl_card_defaultUnit">
-                
-                <?php while ( have_posts() ) : the_post(); //START：メインループ ?>
-
-                <?php  get_template_part( 'template-parts/card/card' ); //ブログカードをインク ?>
-
-                <?php endwhile; //END：メインループ ?>
-            </ul>
-    
-            <?php endif ; //A ?>
-        </section>
+		<?php  get_template_part( 'template-parts/card/card-work' ); //ブログカードをインク ?>
 
         <?php if (function_exists('responsive_pagination')) { responsive_pagination($additional_loop->max_num_pages); } //ページネーション?>
 
     </main>
-
-    <?php if ( get_field('dv_archive','option') ) { get_sidebar(); } //サイドバー読み込み?>
 
 </div>
 <!--/.ly_cont-->

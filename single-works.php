@@ -21,8 +21,6 @@
         <?php endwhile; //END：メインループ ?>
 
     </main>
-
-    <?php if ( get_field('dv_single','option') ) { get_sidebar(); } //サイドバー読み込み?>
 </div>
 <!--/.ly_cont-->
 <?php get_footer();//フッター読み込み
