@@ -1,39 +1,30 @@
-<?php 
+<?php
 /*--------------------------------
- *  変数定義
+ *  DOM生成
 --------------------------------*/
-$taxonomy_slug = array_keys(get_the_taxonomies()); //タクソノミーオブジェクトを全て取得
-$taxonomyCat = get_taxonomy($taxonomy_slug[0]); //連想配列の先頭のタクソノミーオブジェクトを取得
-$postTaxonomyCat = $taxonomyCat->name; //カテゴリースラッグを抽出
-if( $postTaxonomyCat == 'relation' ) {
-    $postTaxonomyCat = null; //タグスラッグを拾ったら空の値を返す
-}
+?>
 
+<?php 
 $args = array (
 	'post_type' => 'works',
 	'ignore_sticky_posts' => 1, //先頭固定表示機能を停止
-	'posts_per_page' => '3', //ページにどれだけ表示させるか
 	'orderby' => 'date',
 	'order' => 'DESC',
+	'tax_query' => array (
+		array(
+		'taxonomy' => 'workscat',
+		'field'=>'slug',
+		'terms'=> 'ec',
+		),
+	),
 
 );
-
-if(!empty($postTerms)){
-	$tax_query1 = array(
-		'taxonomy' =>$postTaxonomy,
-		'field'=>'slug',
-		'terms'=>$postTerms
-	);
-	array_push($args['tax_query'], $tax_query1);
-}
 
 //------------------------------------------------------------------------------------------------------------------------[ループ処理エリア]
 $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ) :
 ?>
-
 <section class="ly_works_dtl">
-	<p><?php echo $postTaxonomyCat ?></p>
 	<div class="ly_works_wrapper">
 		<div class="ly_works_inner">
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); //繰り返し処理開始?>

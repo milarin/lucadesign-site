@@ -35,6 +35,10 @@
 			}
 		}
 	}
+	&.ly_fv__contact {
+		background-color: #f6f6f6;
+
+	}
 }
 .bl_fv {
 	position: relative;
@@ -93,6 +97,15 @@
 			@include media(sm)  {
 				font-size: 0.875rem;
 			}
+		}
+	}
+	&.ly_fv__contact {
+		color: $theme_color;
+		&:before,
+		&:after,
+		.bl_space_block_l,
+		.bl_space_block_r {
+			border-color: $theme_color;
 		}
 	}
 	&.bl_fv__under {

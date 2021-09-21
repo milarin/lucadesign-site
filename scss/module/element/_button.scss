@@ -41,6 +41,22 @@
 		display: block;
 		margin: 0 auto;
 	}
+	&.el_btn__back,
+	&.el_btn__card {
+		border-color: #999;
+		&:after {
+			color: #999;
+		}
+		&:focus,
+		&:hover {
+			background-color: #999;
+			border-color: currentColor;
+			color: #fff;
+			&:after {
+				color: #fff;
+			}
+		}
+	}
 }
 
 /*------ 矢印付き -------*/
@@ -192,4 +208,10 @@ input[type ="submit"].el_btn_submit {
 		border-color: currentColor;
 		color: #151515;
 	}
+}
+
+.ly_btn_wrapper {
+	@include contentArea;
+	text-align: center;
+	margin-top: 2em;
 }

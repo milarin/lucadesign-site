@@ -124,3 +124,25 @@
 		}
 	}
 }
+
+.ly_footer_contact {
+	.ly_footer_wrapper {
+		padding-top: 0;
+	}
+	.ly_footer_inner_top {
+		display: none;
+	}
+	.ly_footer_inner__bottom {
+		display: block;
+		& > * {
+			margin-bottom: 0px;
+		}
+		.ly_footer_inner_content {
+			display: block;
+			text-align: center;
+			.el_adminInfo {
+				display: none;
+			}
+		}
+	}
+}

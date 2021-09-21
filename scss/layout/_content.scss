@@ -35,7 +35,8 @@
 	background-color: #f6f6f6;
 }
 
-.ly_cont__thanks {
+.ly_cont__thanks,
+.ly_cont__thanks-price-list {
 	width: unset;
     max-width: unset;
     padding-right: unset;
@@ -82,7 +83,7 @@
 .ly_cont.ly_cont__archive,
 .ly_cont.ly_cont__404,
 .ly_cont.ly_cont__contact,
-.ly_cont.ly_cont__price_list,
+.ly_cont.ly_cont__price-list,
 .ly_cont.ly_cont__privacy-policy {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -90,9 +91,8 @@
 }
 
 .ly_cont.ly_cont__contact,
-.ly_cont.ly_cont__price_list {
+.ly_cont.ly_cont__price-list {
 	background-color: #fff;
-	margin-top: 60px;
 	margin-bottom: 120px;
 	border: 1px solid #ddd;
 	padding-top: 60px;

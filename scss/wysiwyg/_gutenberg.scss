@@ -190,4 +190,40 @@
 /*------ サムネイル中央表示 -------*/
 .post-thumbnail { //サムネイル中央表示
     text-align: center;
+	display: none;
+}
+
+.ly_tabbar {
+	.ly_tabbar_inner {
+		.bl_tabbar {
+			& > ul {
+				& > li {
+
+				}
+			}
+		}
+	}
+}
+.bl_tabbar {
+	border-bottom: 1px solid #DDDDDD;
+	& > ul {
+		display: flex;
+		justify-content: center;
+		& > li {
+			margin-right: percentage(70 / $content_width_calc);
+			&:last-child {
+				margin-right: 0px;
+			}
+			& > a {
+				display: block;
+				padding: 15px;
+				color: #999999;
+				text-decoration: none;
+				&.active {
+					border-bottom: 1px solid #333333;
+					color: #333;
+				}
+			}
+		}
+	}
 }

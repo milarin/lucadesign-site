@@ -2,12 +2,6 @@
 /*--------------------------------
  *  変数定義
 --------------------------------*/
-$taxonomy_slug = array_keys(get_the_taxonomies()); //タクソノミーオブジェクトを全て取得
-$taxonomyCat = get_taxonomy($taxonomy_slug[0]); //連想配列の先頭のタクソノミーオブジェクトを取得
-$postTaxonomyCat = $taxonomyCat->name; //カテゴリースラッグを抽出
-if( $postTaxonomyCat == 'relation' ) {
-    $postTaxonomyCat = null; //タグスラッグを拾ったら空の値を返す
-}
 
 $args = array (
 	'post_type' => 'works',
@@ -44,7 +38,7 @@ if ( $the_query->have_posts() ) :
 			</figure>
 			<div class="bl_works_card_body">
 				<h3><?php echo wp_trim_words( get_the_title(), 15, '…' ); //タイトル?></h3>
-				<?php if($terms = get_the_terms($post->ID, $postTaxonomyCat)) : //A ?>
+				<?php if($terms = get_the_terms($post->ID, 'workscat')) : //A ?>
 				<p><?php echo wp_trim_words(esc_html($terms[0]->name), 6, '…' ); //タームラベル ?></p>
 				<?php else: ?>
 				<p>未分類</p>
@@ -57,6 +51,9 @@ if ( $the_query->have_posts() ) :
 		<?php endwhile; // 繰り返し終了 ?>
 		</div>
 		<!-- /.ly_works_inner -->
+		<div class="ly_btn_wrapper">
+			<a href="/works" class="el_btn el_btn__card">制作事例一覧</a>
+		</div>
 	</div>
 	<!-- /.ly_works_wrapper -->
 </section>

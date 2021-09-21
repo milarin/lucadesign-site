@@ -5,7 +5,7 @@ $contact = '[contact-form-7 id="8" html_id="inline-validation-engine"]' //contac
 ?>
 
 <?php get_header(); //ヘッダー読み込み?>
-<?php get_template_part('template-parts/parts/fv') ; //FV読み込み ?>
+<?php get_template_part('template-parts/parts/fv-contact') ; //FV読み込み ?>
 <div class="ly_bgcolor">
 
 	<div class="ly_cont ly_cont__<?php echo $slug; ?>">
@@ -28,4 +28,7 @@ $contact = '[contact-form-7 id="8" html_id="inline-validation-engine"]' //contac
 </div>
 <!-- /.ly_bgcolor -->
 
-<?php get_footer();//フッター読み込み
+<div class="ly_footer_contact">
+	<?php get_footer();//フッター読み込み ?>
+</div>
+<!-- /.ly_footer_contact -->

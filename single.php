@@ -1,5 +1,6 @@
 <?php get_header(); //ヘッダー読み込み ?>
 <?php get_template_part('template-parts/parts/fv') ; //FV読み込み ?>
+<?php get_template_part( 'template-parts/parts/breadCrumb' ); //パンくずリスト読み込み ?>
 <div class="ly_cont<?php if ( get_field('dv_single','option') ) { echo ' ly_cont__col'; } ?> ly_cont__archive">
     <main id="primary" class="site-main ly_cont_main">
 

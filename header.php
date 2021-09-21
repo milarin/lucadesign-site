@@ -66,4 +66,3 @@ $nav_pc = array( //グローバルナビゲーション
 		</header>
 		<!--/.ly_header-->
 		<?php get_template_part( 'template-parts/parts/stickyNav' ); //ヘッダー固定ナビ ?>
-		<?php get_template_part( 'template-parts/parts/breadCrumb' ); //パンくずリスト読み込み ?>

@@ -88,5 +88,65 @@ jQuery(document).ready(function ($) {
 			sticky.removeClass('is_scroled');
 		}
 	});
+
+
+	/*--------------------------------
+	 * 
+	--------------------------------*/
+	$(function () {
+		var countElm = $('.el_number_txt'),
+			countSpeed = 20;
+		countElm.each(function () {
+			var self = $(this),
+				countMax = self.attr('data-num'),
+				thisCount = self.text(),
+				countTimer;
+			function timer() {
+				countTimer = setInterval(function () {
+					var countNext = thisCount++;
+					self.text(countNext);
+					if (countNext == countMax) {
+						clearInterval(countTimer);
+					}
+				}, countSpeed);
+			}
+			timer();
+		});
+	});
+
+	var ctx = document.getElementById("myDoughnutChart");
+	var myDoughnutChart = new Chart(ctx, {
+		type: 'doughnut',
+		data: {
+			datasets: [{
+				backgroundColor: [
+					"#2996DE",
+					"#DDDDDD",
+				],
+				data: [95, 5] //グラフのデータ
+			}]
+		},
+	});
+
+
+	//box1の指定
+	$('#box1').on('inview', function (event, isInView) {
+		if (isInView) {
+			//要素が見えたときに実行する処理
+			$("#box1 .count-up").each(function () {
+				$(this).prop('Counter', 0).animate({//0からカウントアップ
+					Counter: $(this).text()
+				}, {
+					// スピードやアニメーションの設定
+					duration: 2000,//数字が大きいほど変化のスピードが遅くなる。2000=2秒
+					easing: 'swing',//動きの種類。他にもlinearなど設定可能
+					step: function (now) {
+						$(this).text(Math.ceil(now));
+					}
+				});
+			});
+		}
+	});
+
 	// ---------------------------------------------------------------------------------------------[jQuery記述欄ここまで]
 });

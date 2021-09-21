@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*--------------------------------
  *  変数定義
 --------------------------------*/
@@ -10,12 +10,12 @@ if( $postTaxonomyCat == 'relation' ) {
 }
 
 $args = array (
-	'post_type' => 'works',
+	'post_type' => 'post',
 	'ignore_sticky_posts' => 1, //先頭固定表示機能を停止
 	'posts_per_page' => '3', //ページにどれだけ表示させるか
 	'orderby' => 'date',
 	'order' => 'DESC',
-
+	
 );
 
 if(!empty($postTerms)){
@@ -32,34 +32,42 @@ $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ) :
 ?>
 
-<section class="ly_works_dtl">
-	<p><?php echo $postTaxonomyCat ?></p>
-	<div class="ly_works_wrapper">
-		<div class="ly_works_inner">
+<section class="ly_post_card">
+	<div class="ly_post_card_wrapper">
+		<div class="ly_post_card_inner ly_post_card_inner__col3">
+		
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); //繰り返し処理開始?>
 
-		<a  href="<?php the_permalink();?>" class="bl_works_card">
+		<a  href="<?php the_permalink();?>" class="bl_post_card">
 			<figure>
-				<p>詳しくはこちら</p>
 				<img src="<?php img_output_thumb_url( $page ) ; ?>" alt="">
 			</figure>
-			<div class="bl_works_card_body">
-				<h3><?php echo wp_trim_words( get_the_title(), 15, '…' ); //タイトル?></h3>
-				<?php if($terms = get_the_terms($post->ID, 'workscat')) : //A ?>
-				<p><?php echo wp_trim_words(esc_html($terms[0]->name), 6, '…' ); //タームラベル ?></p>
+			<div class="bl_icon">
+				<img src="http://lucadesign.local/wp-content/uploads/2021/08/subsidy_flow1.svg" alt="">
+			</div>
+			<!-- /.bl_icon -->
+			<div class="bl_post_card_body">
+				<time class="bl_date" datetime="<?php echo get_the_date('Y-m-d');?>"><?php the_time('Y.n.j');?></time>
+				<h3 class="bl_post_card_ttl">
+				<?php echo wp_trim_words( get_the_title(), 35, '…' ); //タイトル?>
+				</h3>
+				<?php if($terms = get_the_terms($post->ID, $postTaxonomyCat)) : //A ?>
+				<p class="bl_post_card_cat"><?php echo wp_trim_words(esc_html($terms[0]->name), 10, '…' ); //タームラベル ?></p>
 				<?php else: ?>
-				<p>未分類</p>
+				<p class="bl_post_card_cat">未分類</p>
+				<!-- /.el_labelBorder -->
 				<?php endif; //A ?>
 			</div>
-			<!-- /.bl_works_card_body -->
+			<!-- /.bl_post_card_body -->
 		</a>
-		<!-- /.bl_works_card -->
+		<!-- /.bl_post_card -->
 
 		<?php endwhile; // 繰り返し終了 ?>
+
 		</div>
-		<!-- /.ly_works_inner -->
+		<!-- /.ly_post_card_inner -->
 	</div>
-	<!-- /.ly_works_wrapper -->
+	<!-- /.ly_post_card_wrapper -->
 </section>
 
 <?php else : //条件分岐：投稿が無い場合は ?>

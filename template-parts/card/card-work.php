@@ -37,10 +37,10 @@ if( $postTaxonomyCat == 'relation' ) {
 $args = array (
 	'post_type' => 'works',
 	'ignore_sticky_posts' => 1, //先頭固定表示機能を停止
-	'posts_per_page' => '3', //ページにどれだけ表示させるか
+	'posts_per_page' => '-1', //ページにどれだけ表示させるか
 	'orderby' => 'date',
 	'order' => 'DESC',
-
+	
 );
 
 if(!empty($postTerms)){

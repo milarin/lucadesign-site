@@ -14,7 +14,10 @@ $wp_obj = get_queried_object();
 echo '<div class="bl_breadcrumb">'.  //id名などは任意で
     '<ul>'.
     '<li>'.
-    '<a href="'. esc_url( home_url() ) .'"><span>ホーム</span></a>'.
+    '<a href="'. esc_url( home_url() ) .'"><span class="el_home"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+	<path id="パス_160" data-name="パス 160" d="M229.092,256.625l-5.242-4.61a.566.566,0,0,0-.407-.2h0a.562.562,0,0,0-.407.2l-5.242,4.61c-.411.366-.346.572-.346.572v6.5a.133.133,0,0,0,.142.12h3.835c-.007-1.035-.02-3.294.066-3.79.144-.841.886-1.318,1.952-1.341,1.068.022,1.81.5,1.954,1.341.086.5.07,2.755.064,3.79H229.3a.132.132,0,0,0,.141-.12v-6.5S229.5,256.991,229.092,256.625Z" transform="translate(-217.442 -251.814)" fill="#999"/>
+  	</svg>
+  	ホーム</span></a>'.
     '</li>';
 
 if ( is_attachment() ) {
@@ -26,7 +29,7 @@ if ( is_attachment() ) {
     $post_title = apply_filters( 'the_title', $wp_obj->post_title );
     $post_title = apply_filters( 'the_title', $wp_obj->post_title );
     $post_title_trim = wp_trim_words( $post_title, 14, '...' );
-    echo '<li><span class="bl_breadcrumb_sep">></span><span>'. esc_html( $post_title_trim ) .'</span></li>';
+    echo '<li><span class="bl_breadcrumb_sep">/</span><span>'. esc_html( $post_title_trim ) .'</span></li>';
 
 } elseif ( is_single() ) {
 
@@ -57,7 +60,7 @@ if ( is_attachment() ) {
 
         //カスタム投稿タイプ名の表示
         echo '<li>'.
-            '<span class="bl_breadcrumb_sep">></span><a href="'. $post_type_link .'">'.
+            '<span class="bl_breadcrumb_sep">/</span><a href="'. $post_type_link .'">'.
             '<span>'. $post_type_label .'</span>'.
             '</a>'.
             '</li>';
@@ -104,7 +107,7 @@ if ( is_attachment() ) {
                 $parent_link = esc_url( get_term_link( $parent_id, $the_tax ) );
                 $parent_name = esc_html( $parent_term->name );
                 echo '<li>'.
-                    '<span class="bl_breadcrumb_sep">></span><a href="'. $parent_link .'">'.
+                    '<span class="bl_breadcrumb_sep">/</span><a href="'. $parent_link .'">'.
                     '<span>'. $parent_name .'</span>'.
                     '</a>'.
                     '</li>';
@@ -115,14 +118,14 @@ if ( is_attachment() ) {
         $term_name = esc_html( $term->name );
         // 最下層のタームを表示
         echo '<li>'.
-            '<span class="bl_breadcrumb_sep">></span><a href="'. $term_link .'">'.
+            '<span class="bl_breadcrumb_sep">/</span><a href="'. $term_link .'">'.
             '<span>'. $term_name .'</span>'.
             '</a>'.
             '</li>';
     }
 
         // 投稿自身の表示
-        echo '<li><span class="bl_breadcrumb_sep">></span><span>'. esc_html( strip_tags( $post_title_trim ) ) .'</span></li>';
+        echo '<li><span class="bl_breadcrumb_sep">/</span><span>'. esc_html( strip_tags( $post_title_trim ) ) .'</span></li>';
 
 } elseif ( is_page() || is_home() ) {
 
@@ -139,21 +142,21 @@ if ( is_attachment() ) {
             $parent_link = esc_url( get_permalink( $parent_id ) );
             $parent_name = esc_html( get_the_title( $parent_id ) );
             echo '<li>'.
-                '<span class="bl_breadcrumb_sep">></span><a href="'. $parent_link .'">'.
+                '<span class="bl_breadcrumb_sep">/</span><a href="'. $parent_link .'">'.
                 '<span>'. $parent_name .'</span>'.
                 '</a>'.
                 '</li>';
         }
     }
     // 投稿自身の表示
-    echo '<li><span class="bl_breadcrumb_sep">></span><span>'. esc_html( strip_tags( $page_title ) ) .'</span></li>';
+    echo '<li><span class="bl_breadcrumb_sep">/</span><span>'. esc_html( strip_tags( $page_title ) ) .'</span></li>';
 
 } elseif ( is_post_type_archive() ) {
 
     /**
     * 投稿タイプアーカイブページ ( $wp_obj : WP_Post_Type )
     */
-    echo '<li><span class="bl_breadcrumb_sep">></span><span>'. esc_html( $wp_obj->label ) .'</span></li>';
+    echo '<li><span class="bl_breadcrumb_sep">/</span><span>'. esc_html( $wp_obj->label ) .'</span></li>';
 
 } elseif ( is_date() ) {
 
@@ -167,27 +170,27 @@ if ( is_attachment() ) {
     if ( $day !== 0 ) {
         //日別アーカイブ
         echo '<li>'.
-            '<span class="bl_breadcrumb_sep">></span><a href="'. esc_url( get_year_link( $year ) ) .'"><span>'. esc_html( $year ) .'年</span></a>'.
+            '<span class="bl_breadcrumb_sep">/</span><a href="'. esc_url( get_year_link( $year ) ) .'"><span>'. esc_html( $year ) .'年</span></a>'.
             '</li>'.
             '<li>'.
-            '<span class="bl_breadcrumb_sep">></span><a href="'. esc_url( get_month_link( $year, $month ) ) . '"><span>'. esc_html( $month ) .'月</span></a>'.
+            '<span class="bl_breadcrumb_sep">/</span><a href="'. esc_url( get_month_link( $year, $month ) ) . '"><span>'. esc_html( $month ) .'月</span></a>'.
             '</li>'.
             '<li>'.
-            '<span class="bl_breadcrumb_sep">></span><span>'. esc_html( $day ) .'日</span>'.
+            '<span class="bl_breadcrumb_sep">/</span><span>'. esc_html( $day ) .'日</span>'.
             '</li>';
 
     } elseif ( $month !== 0 ) {
         //月別アーカイブ
         echo '<li>'.
-            '<span class="bl_breadcrumb_sep">></span><a href="'. esc_url( get_year_link( $year ) ) .'"><span>'. esc_html( $year ) .'年</span></a>'.
+            '<span class="bl_breadcrumb_sep">/</span><a href="'. esc_url( get_year_link( $year ) ) .'"><span>'. esc_html( $year ) .'年</span></a>'.
             '</li>'.
             '<li>'.
-            '<span class="bl_breadcrumb_sep">></span><span>'. esc_html( $month ) .'月</span>'.
+            '<span class="bl_breadcrumb_sep">/</span><span>'. esc_html( $month ) .'月</span>'.
             '</li>';
 
     } else {
         //年別アーカイブ
-        echo '<li><span class="bl_breadcrumb_sep">></span><span>'. esc_html( $year ) .'年</span></li>';
+        echo '<li><span class="bl_breadcrumb_sep">/</span><span>'. esc_html( $year ) .'年</span></li>';
 
     }
 
@@ -196,7 +199,7 @@ if ( is_attachment() ) {
                         /**
     * 投稿者アーカイブ ( $wp_obj : WP_User )
     */
-    echo '<li><span class="bl_breadcrumb_sep">></span><span>'. esc_html( $wp_obj->display_name ) .' の執筆記事</span></li>';
+    echo '<li><span class="bl_breadcrumb_sep">/</span><span>'. esc_html( $wp_obj->display_name ) .' の執筆記事</span></li>';
 
 } elseif ( is_archive() ) {
 
@@ -218,7 +221,7 @@ if ( is_attachment() ) {
             $parent_link = esc_url( get_term_link( $parent_id, $tax_name ) );
             $parent_name = esc_html( $parent_term->name );
             echo '<li>'.
-                '<span class="bl_breadcrumb_sep">></span><a href="'. $parent_link .'">'.
+                '<span class="bl_breadcrumb_sep">/</span><a href="'. $parent_link .'">'.
                 '<span>'. $parent_name .'</span>'.
                 '</a>'.
                 '</li>';
@@ -227,7 +230,7 @@ if ( is_attachment() ) {
 
     // ターム自身の表示
     echo '<li>'.
-        '<span class="bl_breadcrumb_sep">></span><span>'. esc_html( $term_name ) .'</span>'.
+        '<span class="bl_breadcrumb_sep">/</span><span>'. esc_html( $term_name ) .'</span>'.
         '</li>';
 
 
@@ -236,7 +239,7 @@ if ( is_attachment() ) {
     /**
     * 検索結果ページ
     */
-    echo '<li><span class="bl_breadcrumb_sep">></span><span>「'. esc_html( get_search_query() ) .'」で検索した結果</span></li>';
+    echo '<li><span class="bl_breadcrumb_sep">/</span><span>「'. esc_html( get_search_query() ) .'」で検索した結果</span></li>';
 
 
 } elseif ( is_404() ) {
@@ -244,14 +247,14 @@ if ( is_attachment() ) {
     /**
     * 404ページ
     */
-    echo '<li><span class="bl_breadcrumb_sep">></span><span>お探しの記事は見つかりませんでした。</span></li>';
+    echo '<li><span class="bl_breadcrumb_sep">/</span><span>お探しの記事は見つかりませんでした。</span></li>';
 
 } else {
 
     /**
     * その他のページ
     */
-    echo '<li><span class="bl_breadcrumb_sep">></span><span>'. esc_html( get_the_title() ) .'</span></li>';
+    echo '<li><span class="bl_breadcrumb_sep">/</span><span>'. esc_html( get_the_title() ) .'</span></li>';
 
 }
 
