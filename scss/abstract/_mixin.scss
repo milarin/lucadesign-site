@@ -220,6 +220,7 @@
         font-size: unset;
         border-bottom: unset;
         padding-bottom: unset;
+		border: unset;
         @include media(sm) {
             font-size: unset;
         }

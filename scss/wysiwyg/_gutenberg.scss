@@ -12,14 +12,14 @@
     h5,
     h6 { //見出し
         font-weight: bold;
-        line-height: 1.5;
+        // line-height: 1.5;
         font-feature-settings: "palt";
         margin-top: 2.2em;
         margin-bottom: 1.5rem;
     }
     h2 {
         font-size: 1.6rem;
-        border-bottom: 1px solid $content_uCoror;
+        // border-bottom: 1px solid $content_uCoror;
         padding-bottom: 0.1em;
         @include media(sm) {
             font-size: 1.5rem;

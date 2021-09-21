@@ -209,6 +209,20 @@ function my_acf_init() {
 		'mode'             => 'auto',
 		));
 
+	// 見出しブロックを追加
+	acf_register_block(array(
+		'name'             => 'heading-rubi', //英数字で記入!!!!
+		'title'            => __('見出し＋ルビ'), //ブロック名
+		'description'      => __('見出しとルビを表示'), //ブロックの説明
+		'render_callback'  => 'heading_rubi', //（※注）
+		'render_template'  => 'template-parts/gutenberg/block-heading-rubi',
+		'category'         => 'formatting', //初心者はこのままでOK
+		'icon'             => 'admin-comments', //初心者はこのままでOK
+		'keywords'         => array( '見出し', 'ルビ' ), //検索文字列
+		'enqueue_style'    => get_template_directory_uri() . '/css/gutenberg.css',
+		'mode'             => 'auto',
+		));
+
   }
 }
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
@@ -266,4 +280,8 @@ function works_card( $works_card ) { //（※注）の文字列と合わせる
 //（※注）で指定した文字列と表示用PHPファイルの関連付け
 function spacer( $spacer ) { //（※注）の文字列と合わせる
   get_template_part("template-parts/gutenberg/block-spacer");
+}
+//（※注）で指定した文字列と表示用PHPファイルの関連付け
+function heading_rubi( $heading_rubi ) { //（※注）の文字列と合わせる
+  get_template_part("template-parts/gutenberg/block-heading-rubi");
 }
