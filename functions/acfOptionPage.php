@@ -110,6 +110,15 @@ acf_add_options_sub_page(array(
 ));
 
 acf_add_options_sub_page(array(
+'page_title'=> 'ブログ',
+'menu_title'=> 'ブログ',
+'menu_slug'=> 'theme-edit-blo',
+'capability'=> 'edit_posts',
+'parent_slug'=> 'theme-edit',
+'position'=> false,
+));
+
+acf_add_options_sub_page(array(
 'page_title'=> '企業理念',
 'menu_title'=> '企業理念',
 'menu_slug'=> 'theme-edit-phi',

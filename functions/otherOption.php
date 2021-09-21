@@ -182,6 +182,8 @@ function change_archive_title( $title ) {
 	  	$title = post_type_archive_title( "", false ); /* デフォルト投稿タイプのアーカイブの場合 */
 	} elseif ( is_post_type_archive( 'news' ) ) {
 	  	$title = post_type_archive_title( "", false ); /* カスタム投稿タイプ[news]のアーカイブの場合 */
+	} elseif ( is_post_type_archive( 'works' ) ) {
+	  	$title = post_type_archive_title( "", false ); /* カスタム投稿タイプ[news]のアーカイブの場合 */
 	}
 	return $title;
   };

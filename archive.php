@@ -5,7 +5,7 @@ Template Name:アーカイブテンプレート
 ?>
 
 <?php get_header(); //ヘッダーをインク ?>
-<?php get_template_part('template-parts/parts/fv') ; //FV読み込み ?>
+<?php get_template_part('template-parts/parts/fv-blog') ; //FV読み込み ?>
 <?php get_template_part( 'template-parts/parts/breadCrumb' ); //パンくずリスト読み込み ?>
 
 <div class="ly_cont<?php if ( get_field('dv_archive','option') ) { echo ' ly_cont__col'; } ?> ly_cont__archive">
