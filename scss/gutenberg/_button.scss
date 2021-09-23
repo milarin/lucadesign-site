@@ -1,0 +1,60 @@
+/*--------------------------------
+    ボタン
+--------------------------------*/
+.el_btn {
+	@include fontSize(14);
+	display: inline-block;
+	width: 100%;
+	max-width: 360px;
+	padding: 20px;
+	background-color: #fff;
+	border: 2px solid transparent;
+	color: $theme_color;
+	text-align: center;
+	text-decoration: none;
+	transition: .25s;
+	border-radius: 4px;
+	position: relative;
+	padding: {
+		right: 2em;
+		left: 1.38em;
+	}
+	&:after {
+		content: '→';
+		position: absolute;
+		top: 50%;
+		right: 2.1875em;
+		transform: translateY(-50%);
+	}
+	&:focus,
+	&:hover {
+		background-color: $theme_color;
+		border-color: currentColor;
+		color: #fff;
+	}
+	&.el_btn_recruit {
+		background-color: #EE6237;
+		color: #fff;
+		font-size: 1.125rem;
+		max-width: 800px;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+	&.el_btn__back,
+	&.el_btn__card {
+		border-color: #999;
+		&:after {
+			color: #999;
+		}
+		&:focus,
+		&:hover {
+			background-color: #999;
+			border-color: currentColor;
+			color: #fff;
+			&:after {
+				color: #fff;
+			}
+		}
+	}
+}

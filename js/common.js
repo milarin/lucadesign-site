@@ -148,5 +148,9 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
+	$(function () {
+		$.simpleTicker($('.ticker'), { 'effectType': 'roll' });
+	});
+
 	// ---------------------------------------------------------------------------------------------[jQuery記述欄ここまで]
 });

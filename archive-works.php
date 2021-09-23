@@ -24,13 +24,6 @@ Template Name:workアーカイブテンプレート
 			</div>
 		</section> -->
 
-        <section class="ly_sect__archive ly_sect__archive_header">
-            <h1 class="el_lv2Heading el_lv2Heading__tbBorder">
-                <span>
-                    <?php the_archive_title(); //アーカイブタイトル ?>
-                </span>
-            </h1>
-        </section>
 		<?php  get_template_part( 'template-parts/card/card-work' ); //ブログカードをインク ?>
 		<!-- <section class="ly_works_dtl">
 			<div class="ly_works_wrapper">
